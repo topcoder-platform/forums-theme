@@ -31,11 +31,11 @@
           ><a class="Header-primary-item" href="https://www.topcoder.com"
             >BUSINESS</a
           ><span class="Header-separator"></span
-          ><a class="Header-primary-item">COMMUNITY</a>
+          ><a class="Header-primary-item primary-item-community">COMMUNITY</a>
           <div class="Header-secondary-menu">
-            <a class="Header-secondary-item">Compete</a
-            ><a class="Header-secondary-item">Tracks</a
-            ><a class="Header-secondary-item selected">Explore</a>
+            <a class="Header-secondary-item primary-item-compete">Compete</a
+            ><a class="Header-secondary-item primary-item-tracks">Tracks</a
+            ><a class="Header-secondary-item selected primary-item-explore">Explore</a>
           </div>
         </nav>
 
@@ -80,17 +80,17 @@
     </nav>
   </header>
 
-  <div class="Header-Second-Menu">
+  <div class="Header-Second-Menu Explore-Menu">
     <div class="Second-Menu-Content">
       <a
         class="Second-Menu-Link"
-        href="javascript:;"
+        href="https://www.topcoder.com/community/member-programs/topcoder-open"
         ><span>TCO</span
         ></a
       >
       <a
         class="Second-Menu-Link"
-        href="javascript:;"
+        href="https://www.topcoder.com/community/member-programs"
         ><span>Programs</span
         ></a
       >
@@ -101,18 +101,98 @@
         ></a
       ><a
         class="Second-Menu-Link"
-        href="javascript:;"
+        href="https://www.topcoder.com/community/statistics"
         target=""
         ><span>Statistics</span
         ></a
       ><a class="Second-Menu-Link"
-        href="javascript:;"
+        href="https://www.topcoder.com/blog"
         ><span>Blog</span></a
       >
       <a
         class="Second-Menu-Link"
-        href="/challenges"
+        href="https://www.topcoder.com/thrive"
         ><span>Thrive</span
+        ></a
+      >
+    </div>
+  </div>
+
+  <div class="Header-Second-Menu Tracks-Menu hide">
+    <div class="Second-Menu-Content">
+      <a
+        class="Second-Menu-Link"
+        href="https://www.topcoder.com/thrive/tracks?track=Competitive%20Programming"
+        ><span>Competitive Programming</span
+        ></a
+      >
+      <a
+        class="Second-Menu-Link"
+        href="https://www.topcoder.com/thrive/tracks?track=Data%20Science&tax="
+        ><span>Data Science</span
+        ></a
+      >
+      <a
+        class="Second-Menu-Link"
+        href="https://www.topcoder.com/thrive/tracks?track=Design&tax="
+        ><span>Design</span
+        ></a
+      ><a
+        class="Second-Menu-Link"
+        href="https://www.topcoder.com/thrive/tracks?track=Development&tax="
+        target=""
+        ><span>Development</span
+        ></a
+      ><a class="Second-Menu-Link"
+        href="https://www.topcoder.com/thrive/tracks?track=QA&tax="
+        ><span>QA</span></a
+      >
+    </div>
+  </div>
+
+  <div class="Header-Second-Menu Compete-Menu hide">
+    <div class="Second-Menu-Content">
+      <a
+        class="Second-Menu-Link"
+        href="https://www.topcoder.com/challenges"
+        ><span>All Challenges</span
+        ></a
+      >
+      <a
+        class="Second-Menu-Link"
+        href="https://arena.topcoder.com"
+        ><span>Competitive Programming</span
+        ></a
+      >
+      <a
+        class="Second-Menu-Link"
+        href="https://www.topcoder.com/community/taas"
+        target=""
+        ><span>Gig Work</span
+        ></a
+      >
+    </div>
+  </div>
+
+  <div class="Header-Second-Menu Community-Menu hide">
+    <div class="Second-Menu-Content">
+      <a
+        class="Second-Menu-Link"
+        href="https://www.topcoder.com/my-dashboard"
+        ><span>Dashboard</span
+        ></a
+      >
+      <a
+        class="Second-Menu-Link"
+        href="https://www.topcoder.com/members/{if $User.SignedIn}{$Profile.Name|escape:'html'}{/if}"
+        ><span>My Profile</span
+        ></a
+      >
+      <a
+        class="Second-Menu-Link"
+        href="https://community.topcoder.com/PactsMemberServlet?module=PaymentHistory&full_list=false"
+        target="_blank"
+        ><span>Payments</span
         ></a
       >
     </div>

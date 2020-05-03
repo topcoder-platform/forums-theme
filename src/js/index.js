@@ -5,3 +5,4 @@
  */
 
 import "../../node_modules/@vanillaforums/theme-boilerplate/src/js/index";
+import "./header";
