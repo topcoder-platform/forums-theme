@@ -1,6 +1,5 @@
 # Topcoder Theme
 
-
 ## Description
 
 Custom theme for Topcoder Theme.
@@ -8,20 +7,26 @@ Custom theme for Topcoder Theme.
 
 ## Notes
 
-- This theme needs the `Feature.NewFlyouts.Enabled` config set as `true` for the flyouts to work properly. 
+- This theme needs the `Feature.NewFlyouts.Enabled` config set as `true` for the flyouts to work properly.
+- The theme name should be equal the `key` property in `addon.json` (example it should be `topcoder-theme` with current key value)
 
 ## Building Styles / Javascript / Images
 
-This theme is built with the [Vanilla CLI](https://docs.vanillaforums.com/developer/vanilla-cli/) and does not come with its own build toolchain. With that installed you can simply run:
+- Install dependencies:
+```
+npm i
+```
+
+- This theme is built with the [Vanilla CLI](https://docs.vanillaforums.com/developer/vanilla-cli/) and does not come with its own build toolchain. With that installed you can simply run:
 
 ```bash
-vanilla build
+vanilla build --vanillasrc ./
 ```
 
 or
 
 ```bash
-vanilla build --watch
+vanilla build --vanillasrc ./ --watch
 ```
 
 to build your styles/js/images.

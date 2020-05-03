@@ -8,7 +8,7 @@
 }
 
 <div class="Frame-header">
-  <header id="MainHeader" class="Header">
+  <header id="MainHeader" class="Header-Top Header">
     <div class="Container">
       <div class="row">
         <div class="Hamburger">
@@ -19,21 +19,32 @@
             </span>
           </button>
         </div>
-        <a href="{home_link format=" %url"}" class="Header-logo">
-          <img src="/themes/topcoder-theme/design/images/topcoder-logo.png"></img>
-        </a>
+
         <a href="{home_link format=" %url"}" class="Header-logo mobile">
-          <img src="/themes/topcoder-theme/design/images/topcoder-logo.png"></img>
+          <img src="/themes/topcoder-theme/design/images/topcoder-logo.svg"></img>
         </a>
+
         <nav class="Header-desktopNav">
-          {categories_link format=$linkFormat}
-          {discussions_link format=$linkFormat}
-          {custom_menu format=$linkFormat}
+          <a class="Topcoder-logo" href="{home_link format=" %url"}"
+            ><img src="/themes/topcoder-theme/design/images/topcoder-logo.svg"></img></a
+          ><span class="Header-separator"></span
+          ><a class="Header-primary-item" href="https://www.topcoder.com"
+            >BUSINESS</a
+          ><span class="Header-separator"></span
+          ><a class="Header-primary-item">COMMUNITY</a>
+          <div class="Header-secondary-menu">
+            <a class="Header-secondary-item">Compete</a
+            ><a class="Header-secondary-item">Tracks</a
+            ><a class="Header-secondary-item selected">Explore</a>
+          </div>
         </nav>
+
+
+
         <div class="Header-flexSpacer"></div>
         <div class="Header-right">
           {community_chooser buttonType='titleBarLink' buttonClass='Header-desktopCommunityChooser'}
-          <div class="MeBox-header">
+          <div class="MeBox-header Header-right-Item">
             {module name="MeModule" CssClass="FlyoutRight"}
           </div>
           {if $User.SignedIn}
@@ -43,6 +54,11 @@
             </span>
           </button>
           {/if}
+          <div
+            class="Header-right-Item"
+          >
+            <img src="/themes/topcoder-theme/design/images/icon-search.svg"></img>
+          </div>
         </div>
       </div>
     </div>
@@ -63,4 +79,43 @@
       </div>
     </nav>
   </header>
+
+  <div class="Header-Second-Menu">
+    <div class="Second-Menu-Content">
+      <a
+        class="Second-Menu-Link"
+        href="javascript:;"
+        ><span>TCO</span
+        ></a
+      >
+      <a
+        class="Second-Menu-Link"
+        href="javascript:;"
+        ><span>Programs</span
+        ></a
+      >
+      <a
+        class="Second-Menu-Link selected"
+        href="javascript:;"
+        ><span>Forums</span
+        ></a
+      ><a
+        class="Second-Menu-Link"
+        href="javascript:;"
+        target=""
+        ><span>Statistics</span
+        ></a
+      ><a class="Second-Menu-Link"
+        href="javascript:;"
+        ><span>Blog</span></a
+      >
+      <a
+        class="Second-Menu-Link"
+        href="/challenges"
+        ><span>Thrive</span
+        ></a
+      >
+    </div>
+  </div>
+
 </div>
