@@ -10,6 +10,12 @@
     .Meta.Meta-Discussion {
       display: flex;
       align-items: center;
+
+      .MItem {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 16px;
+      }
     }
 
     .MItem.Category {
@@ -41,4 +47,17 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
+}
+
+.DataList {
+  .Meta {
+    display: flex;
+    align-items: center;
+
+    .MItem {
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 16px;
+    }
+  }
 }
