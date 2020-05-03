@@ -1,0 +1,101 @@
+.DataListWrap,
+.Content.MainContent,
+.CommentsWrap {
+  h2.CommentHeading {
+    color: $global-color_black_light;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+
+  .DataList.DataList-Search,
+  .DataList.CategoryList,
+  .MessageList.DataList.Comments {
+    li.Item {
+      border-bottom: none;
+      border-top: none;
+      background-color: $global-grey-very-dark-bg;
+      margin-bottom: 16px;
+      padding: 18px 20px 0 25px !important;
+      border-radius: 10px;
+
+      .PhotoWrap {
+        top: 18px;
+        left: 26px;
+      }
+
+      .Item-Header.CommentHeader {
+        padding-top: 0;
+        min-height: 0;
+
+        .Username {
+          color: $global-color_black_light;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 16px;
+        }
+
+        .Meta.CommentMeta.CommentInfo {
+          display: block;
+        }
+      }
+
+      .Message.userContent {
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .DataList.DataList-Search {
+    li.Item {
+      padding: 18px 20px 1px 25px !important;
+    }
+  }
+
+  .DataList.CategoryList {
+    li.Item {
+      padding: 18px 20px 17px 25px !important;
+
+      .PhotoWrap {
+        top: 0;
+        left: 0;
+      }
+
+
+      .LatestPostTitle {
+        color: $global-color_black_light;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.ReactButton.Quote.js-quoteButton {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.44px;
+  line-height: 15px;
+}
+
+.MessageForm.CommentForm.FormTitleWrapper {
+  h2 {
+    text-transform: uppercase;
+    color: $global-color_black_light;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+}
+
+.FormTitleWrapper {
+  .Buttons {
+    .Back {
+      margin-right: 20px !important;
+      * {
+        color: $global-blue;
+      }
+    }
+  }
+}

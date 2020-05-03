@@ -1,0 +1,35 @@
+.Frame-body {
+  .Frame-content {
+    .Frame-details {
+      .Frame-row {
+        width: 100%;
+
+        .Content.MainContent {
+          width: 0;
+        }
+      }
+      .Frame-row-main {
+        flex-direction: row-reverse;
+
+        aside.Panel.Panel-main {
+          margin-left: 0;
+          margin-right: 90px;
+          min-width: 260px;
+        }
+
+        .MainContent.Content {
+          flex: 1;
+        }
+      }
+    }
+  }
+}
+
+
+h1 {
+  color: $global-color_black_light !important;
+  font-size: 34px !important;
+  font-weight: 400 !important;
+  line-height: 38px !important;
+  text-transform: uppercase !important;
+}

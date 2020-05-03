@@ -1,0 +1,46 @@
+.Frame-header {
+  .Header {
+    background-color: $global-color_black;
+
+    .Container {
+      .row {
+        height: 80px;
+        a {
+          &:hover {
+            background: transparent;
+          }
+        }
+
+        .Header-desktopNav {
+          .Navigation-linkContainer {
+            a.Navigation-link {
+              font-size: 14px;
+              font-weight: 700;
+              line-height: 30px;
+
+              &.Selected,
+              &:hover {
+                background: transparent;
+                color: $color-turquoise-tc-turquoise-light;
+              }
+            }
+          }
+        }
+
+        .Header-right {
+          .SignInLinks {
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+
+            .ApplyButton {
+              font-size: 18px;
+              font-weight: 700;
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

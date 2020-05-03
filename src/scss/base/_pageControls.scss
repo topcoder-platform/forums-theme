@@ -1,0 +1,33 @@
+.PageControls {
+  &.Top {
+    border-bottom: 1px solid $global-grey-bg;
+    padding-bottom: 10px;
+  }
+
+  .Pager.NumberedPager {
+    span,
+    a {
+      border-color: transparent;
+      border-radius: 15px;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 30px;
+      height: 30px;
+      padding: 0 15px;
+      margin: 0 1px;
+
+      &.Highlight.Pager-p {
+        background-color: $global-grey-bg-dark;
+      }
+
+      &:hover {
+        border-color: transparent;
+      }
+    }
+
+    a.Pager-nav {
+      color: white;
+      background-color: $global-color_primary;
+    }
+  }
+}

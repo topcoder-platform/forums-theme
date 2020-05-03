@@ -1,0 +1,89 @@
+.FormTitleWrapper {
+  max-width: 765px;
+}
+
+.richEditor {
+  .richEditor-embedBar {
+    border-top: 1px solid $global-grey-bg;
+    height: 55px;
+
+    .richEditor-menuItems.richEditor-inlineMenuItems {
+      height: 100%;
+    }
+  }
+}
+
+form {
+  & > div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Entry.SingleEntryMethod {
+    margin: 0;
+  }
+
+  input[type='text'],
+  input[type='password'],
+  input.InputBox.BigInput[type='text'],
+  select {
+    height: 52px;
+  }
+
+  .SelectWrapper::after {
+    content: '';
+    width: 15px;
+    height: 9px;
+    background: url(/themes/topcoder-theme/design/images/icon-chevron-down.svg);
+    background-size: 15px 9px;
+    right: 16px;
+  }
+
+  .List.Inline.PostOptions {
+    label {
+      font-size: 14px;
+      line-height: 26px;
+    }
+  }
+
+  .Buttons {
+    .Button.Cancel {
+      border-color: $global-color_primary;
+      color: $global-color_primary;
+    }
+
+    .Button.DraftButton {
+      background-color: $global-color_grey_dark;
+      border-color: $global-color_grey_dark;
+      color: white;
+    }
+
+    .Button {
+      margin-left: 7px !important;
+    }
+  }
+
+  li,
+  .P {
+    margin: 9px 0;
+    position: relative;
+
+    label[for*="Form"],
+    label[for='Form_Password'],
+    label[for='Form_Name'] {
+      color: $global-color_grey_dark !important;
+      font-size: 12px !important;
+      font-weight: 400 !important;
+      left: 9px !important;
+      line-height: 12px !important;
+      position: absolute !important;
+      top: -5px !important;
+      background: white !important;
+      width: auto !important;
+      right: auto !important;
+      padding: 0 4px !important;
+      z-index: 1 !important;
+    }
+  }
+}
+

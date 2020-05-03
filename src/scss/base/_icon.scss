@@ -1,0 +1,38 @@
+.Hijack.Bookmark {
+  width: 16px;
+  height: 16px;
+
+  &::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: url(/themes/topcoder-theme/design/images/bookmark.png);
+    background-size: 16px;
+  }
+
+  &.Bookmarked,
+  &:hover {
+    &::before {
+      content: "";
+      background: url(/themes/topcoder-theme/design/images/bookmarked.png);
+      background-size: 16px;
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+.Arrow.SpFlyoutHandle {
+  width: 16px;
+  height: 16px;
+
+  &::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: url(/themes/topcoder-theme/design/images/icon-thee-dot.svg);
+    background-size: 16px 4px;
+    background-position: center;
+    font-size: 0 !important;
+    background-repeat: no-repeat;
+  }
+}
