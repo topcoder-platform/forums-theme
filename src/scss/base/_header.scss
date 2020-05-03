@@ -1,8 +1,11 @@
 .Frame-header {
-  .Header {
-    background-color: $global-color_black;
+  .Header-Top {
+    background: $global-color_black_light;
 
     .Container {
+      max-width: none;
+      padding: 0;
+
       .row {
         height: 80px;
         a {
@@ -33,14 +36,138 @@
             font-weight: 700;
             text-transform: uppercase;
 
-            .ApplyButton {
+            .SignInPopup {
               font-size: 18px;
               font-weight: 700;
               margin-left: 10px;
+              border: none;
             }
           }
         }
       }
+    }
+  }
+
+  .Header-Second-Menu {
+    display: flex;
+    background: $global-grey-light-bg;
+    color: $global-color_black_light;
+    justify-content: stretch;
+    align-items: center;
+    font-size: 13px;
+    position: relative;
+    height: 60px;
+
+    .Second-Menu-Content {
+      display: flex;
+      flex-grow: 1;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      height: 30px;
+
+      a.Second-Menu-Link {
+        margin: 0 15px;
+        cursor: pointer;
+        height: 100%;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        color: $global-color_black_light;
+
+        &.selected {
+          font-weight: 700;
+
+          &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: -1px;
+            left: 50%;
+            margin-left: -8px;
+            width: 15px;
+            height: 3px;
+            border-radius: 1.5px;
+            background: $color-turquoise-tc-turquoise-light;
+          }
+        }
+      }
+    }
+  }
+
+  .Header-desktopNav {
+    color: white;
+    height: 80px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    flex-grow: 1;
+    a {
+      text-decoration: none;
+    }
+    .Topcoder-logo {
+      margin: 0 50px 0 30px;
+      cursor: pointer;
+    }
+
+    .Header-separator {
+      display: block;
+      height: 30px;
+      width: 1px;
+      background: $global-color_grey;
+    }
+
+    .Header-primary-item {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 30px;
+      margin: 0 30px;
+      padding-right: 5px;
+      position: relative;
+      cursor: pointer;
+      color: white;
+    }
+
+    .Header-secondary-menu {
+      display: flex;
+      overflow: unset;
+      margin-right: auto;
+      width: auto;
+      white-space: nowrap;
+
+      .Header-secondary-item {
+        font-weight: bold;
+        margin-left: 30px;
+        font-size: 14px;
+        line-height: 30px;
+        text-align: center;
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-content: flex-start;
+        cursor: pointer;
+        color: white;
+
+        &.selected {
+          color: $color-turquoise-tc-turquoise-light;
+        }
+      }
+    }
+  }
+
+  .Header-right {
+    .Header-right-Item {
+      height: 32px;
+      margin: 11px 20px 11px 0px;
+      padding-left: 12px;
+      position: relative;
+      border-left: 1px solid $global-color_grey_very_dark;
+      min-width: 36px;
+      display: flex;
+      align-items: center;
     }
   }
 }
