@@ -45,6 +45,20 @@
         font-size: 16px;
         font-weight: 400;
       }
+
+      &.CategoryHeading {
+        background-color: transparent;
+        padding: 0 !important;
+        margin: 41px 0 15px;
+        color: $global-color_grey_very_dark;
+        font-size: 34px;
+        font-weight: 400;
+        line-height: 38px;
+
+        &::before {
+          content: none;
+        }
+      }
     }
   }
 
@@ -62,7 +76,6 @@
         top: 0;
         left: 0;
       }
-
 
       .LatestPostTitle {
         color: $global-color_black_light;
