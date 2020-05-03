@@ -76,6 +76,19 @@
         justify-content: center;
         color: $global-color_black_light;
 
+        &:hover::after {
+          content: '';
+          display: block;
+          position: absolute;
+          bottom: -1px;
+          left: 50%;
+          margin-left: -8px;
+          width: 15px;
+          height: 3px;
+          border-radius: 1.5px;
+          background: $global-grey-bg-dark;
+        }
+
         &.selected {
           font-weight: 700;
 
@@ -128,6 +141,10 @@
       position: relative;
       cursor: pointer;
       color: white;
+
+      &.selected {
+        color: $color-turquoise-tc-turquoise-light;
+      }
     }
 
     .Header-secondary-menu {
@@ -151,6 +168,7 @@
         cursor: pointer;
         color: white;
 
+        &:hover,
         &.selected {
           color: $color-turquoise-tc-turquoise-light;
         }
