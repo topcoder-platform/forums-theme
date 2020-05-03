@@ -1,5 +1,6 @@
 .Button.Primary,
 .Button,
+.Button.Primary.SignInPopup,
 .Button.Primary.Action.BigButton {
   font-size: 14px !important;
   font-weight: bold !important;
@@ -9,4 +10,11 @@
   text-transform: uppercase;
   border-radius: 20px !important;
   padding: 0 20px !important;
+}
+
+
+.Button.Primary.SignInPopup {
+  background: $global-color_primary;
+  border: 1px solid $global-color_primary;
+  color: white;
 }

@@ -1,9 +1,134 @@
 .Frame-footer {
   .Footer {
-    background-color: $global-color_black;
+    background-color: $global-color_black_light;
+    padding: 30px 80px 21px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    position: relative;
 
-    p {
-      color: $global-color_grey_dark;
+    .Container {
+      max-width: 1280px;
+      margin: auto;
+
+      .Footer-logo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+      }
+
+      .Footer-Menu-Container {
+        margin-bottom: 39px;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 20px;
+      }
+
+      @media (max-width: 768px) {
+        .Footer-separator,
+        .Footer-Menu-Container {
+          display: none;
+        }
+      }
+
+      .Footer-separator {
+        height: 2px;
+        background-color: $global-color_grey;
+        border-radius: 1px;
+        width: 100%;
+      }
+
+      .Footer-Menu-Title {
+        color: white;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        margin-bottom: 1px;
+      }
+
+      .Footer-Menu-List {
+        margin-top: 7px;
+      }
+
+      .Footer-Menu-List-Item {
+        a {
+          color: $global-grey-bg !important;
+          font-size: 14px;
+          line-height: 21px;
+        }
+      }
+
+      .Footer-Share-Container {
+        margin-top: 15px;
+        a {
+          margin-right: 5px;
+        }
+
+        @media (max-width: 768px) {
+          display: flex;
+          justify-content: center;
+        }
+      }
+
+      .Footer-Mobile-Menu {
+        display: flex;
+        justify-content: center;
+
+        @media (min-width: 769px) {
+          display: none;
+        }
+
+        .Mobile-Menu-Item {
+          display: flex;
+          flex-direction: column;
+          margin-right: 43px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          a {
+            color: $global-grey-bg;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 21px;
+          }
+        }
+      }
+
+      .Footer-Copyright-Container {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 22px;
+
+        .Footer-Copyright {
+          color: $global-color_grey_dark;
+          font-size: 14px;
+          line-height: 21px;
+
+          a {
+            margin-left: 20px;
+            font-size: 14px;
+            color: $global-grey-bg;
+          }
+          @media (max-width: 768px) {
+            font-size: 11px;
+            line-height: 21px;
+
+            a {
+              text-decoration: underline;
+              font-size: 11px;
+              line-height: 21px;
+            }
+          }
+        }
+      }
+
+      .Footer-Mobile {
+        @media (min-width: 769px) {
+          display: none;
+        }
+      }
     }
   }
 }
