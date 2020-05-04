@@ -1,0 +1,14 @@
+/* Font styles. */
+@mixin barlow-semibold {
+  font-family: "Barlow", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+}
+@mixin barlow-bold {
+  font-family: "Barlow", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+@mixin barlowcondensed-medium {
+  font-family: "Barlow_Condensed", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}

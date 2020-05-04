@@ -1,9 +1,12 @@
 .Box.BoxCategories,
 .BoxFilter.BoxDiscussionFilter {
   h4 {
+    @include barlow-semibold;
+
     font-size: 20px;
-    font-weight: 500;
     line-height: 24px;
+    text-transform: uppercase;
+    color: $global-color_black_light;
   }
 
   ul.PanelInfo.PanelCategories,
@@ -18,6 +21,12 @@
 
       &.Depth2 {
         margin-left: 20px !important;
+      }
+
+      &.Heading {
+        color: $global-color_black_light;
+        font-size: 16px;
+        font-weight: 700;
       }
 
       a {
