@@ -24,8 +24,14 @@
 //  300   Light
 //  400   Normal
 //  500   Medium
+//  600   Semi-Bold
 //  700   Bold
 
 @include font-family('roboto', 700, normal, 'fonts/roboto-v20-latin/', 'roboto-v20-latin-700');
 @include font-family('roboto', 500, normal, 'fonts/roboto-v20-latin/', 'roboto-v20-latin-500');
 @include font-family('roboto', 400, normal, 'fonts/roboto-v20-latin/', 'roboto-v20-latin-regular');
+
+
+@include font-family('Barlow', 600, normal, 'fonts/Barlow/', 'Barlow-SemiBold');
+@include font-family('Barlow', 700, normal, 'fonts/Barlow/', 'Barlow-Bold');
+@include font-family('Barlow_Condensed', 500, normal, 'fonts/Barlow_Condensed/', 'BarlowCondensed-Medium');

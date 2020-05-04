@@ -25,11 +25,13 @@
   }
 }
 
-
+h1.H,
+h1.HomepageTitle,
 h1 {
+  @include barlowcondensed-medium;
   color: $global-color_black_light !important;
   font-size: 34px !important;
-  font-weight: 400 !important;
+  font-weight: 500 !important;
   line-height: 38px !important;
   text-transform: uppercase !important;
 }
