@@ -14,6 +14,7 @@ $( document ).ready(function() {
     $(".Header-Second-Menu, .Header-Second-Menu-mobile").addClass('hide').removeClass('open');
     frameHeader.toggleClass('toggle-mobile-expand');
     frameHeader.toggleClass('toggle-mobile-close');
+    $(".Header-Primary-more-content-container").removeClass('open');
 
   };
 
