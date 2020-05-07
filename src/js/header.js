@@ -20,19 +20,19 @@ $( document ).ready(function() {
 
   $( ".primary-item-explore" ).click(function() {
     resetSelectedMenu();
-    $(this).addClass('selected');
+    $(".primary-item-explore").addClass('selected');
     $(".Header-Second-Menu.Explore-Menu, .Header-Second-Menu-mobile.Explore-Menu").removeClass('hide');
   });
 
   $( ".primary-item-tracks" ).click(function() {
     resetSelectedMenu();
-    $(this).addClass('selected');
+    $(".primary-item-tracks").addClass('selected');
     $(".Header-Second-Menu.Tracks-Menu, .Header-Second-Menu-mobile.Tracks-Menu").removeClass('hide');
   });
 
   $( ".primary-item-compete" ).click(function() {
     resetSelectedMenu();
-    $(this).addClass('selected');
+    $(".primary-item-compete").addClass('selected');
     $(".Header-Second-Menu.Compete-Menu, .Header-Second-Menu-mobile.Compete-Menu").removeClass('hide');
   });
 
