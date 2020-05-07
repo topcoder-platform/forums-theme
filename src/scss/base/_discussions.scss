@@ -32,7 +32,7 @@
           color: $global-color_black_light;
           font-size: 20px;
           font-weight: 400;
-          line-height: 24px;
+          line-height: 30px;
         }
       }
     }
@@ -58,6 +58,81 @@
       font-size: 13px;
       font-weight: 400;
       line-height: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .DataList.Discussions {
+    li.ItemDiscussion {
+      .Meta.Meta-Discussion {
+        &.tag-container {
+          margin-top: 0;
+
+          .MItem {
+            display: none;
+          }
+
+          .Tag {
+            margin-bottom: 12px;
+          }
+        }
+
+        &.status-container {
+          .MCount,
+          .Tag {
+            display: none;
+          }
+
+          .MItem.Category {
+            position: relative;
+
+            &::before {
+              content: "";
+              width: 3px;
+              height: 3px;
+              border-radius: 50%;
+              background: $global-color_grey;
+              position: absolute;
+              display: block;
+              left: -7px;
+              margin-top: -2px;
+              top: 50%;
+            }
+          }
+
+        }
+
+        &.view-comment-container {
+          .MItem:not(.MCount),
+          .Tag {
+            display: none;
+          }
+
+          .MCount {
+            position: relative;
+
+            &::after {
+              content: "";
+              width: 3px;
+              height: 3px;
+              border-radius: 50%;
+              background: $global-color_grey;
+              position: absolute;
+              display: block;
+              right: -8px;
+              margin-top: -2px;
+              top: 50%;
+            }
+
+            &.CommentCount {
+              &::after {
+                content: none;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

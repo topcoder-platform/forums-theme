@@ -1,0 +1,67 @@
+@media screen and (max-width: 768px) {
+  body.Vanilla.Discussions.index {
+    .Frame-body {
+      .Frame-content {
+        .Frame-contentWrap {
+          .Frame-details {
+            .Frame-row {
+              .Content.MainContent {
+                display: none;
+              }
+            }
+
+            .Box.BoxCategories {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .Box.BoxCategories,
+  .BoxFilter.BoxDiscussionFilter {
+    ul.PanelInfo.PanelCategories,
+    ul.FilterMenu {
+      li {
+        &.Active {
+          background-color: transparent;
+
+          a {
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+
+  body.Vanilla:not(.index) {
+    .Frame-body {
+      .Frame-content {
+        .Frame-contentWrap {
+          .Frame-details {
+            .Frame-row-main {
+              aside.Panel.Panel-main {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  body.Vanilla.Discussion.isDesktop {
+    .Frame-body {
+      .Frame-content {
+        .Frame-contentWrap {
+          .Frame-details {
+            .Frame-row.SearchBoxMobile {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

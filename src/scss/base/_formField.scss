@@ -105,3 +105,20 @@ form {
     }
   }
 }
+
+// mobile
+@media screen and (max-width: 768px) {
+  body.Post {
+    .FormWrapper {
+      form {
+        .Buttons {
+          justify-content: center;
+
+          .Button {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}

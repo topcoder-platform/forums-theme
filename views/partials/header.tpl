@@ -7,44 +7,43 @@
 </div>"
 }
 
-<div class="Frame-header">
+<div class="Frame-header toggle-mobile-close">
   <header id="MainHeader" class="Header-Top Header">
     <div class="Container">
       <div class="row">
-        <div class="Hamburger">
-          <button class="Hamburger Hamburger-menuXcross" id="menu-button" aria-label="toggle menu">
-            <span class="Hamburger-menuLines" aria-hidden="true" />
-            <span class="Hamburger-visuallyHidden sr-only">
-              {t c="toggle menu"}
-            </span>
-          </button>
-        </div>
-
-        <a href="{home_link format=" %url"}" class="Header-logo mobile">
-          <img src="/themes/topcoder-theme/design/images/topcoder-logo.svg"></img>
-        </a>
-
-        <nav class="Header-desktopNav">
-          <a class="Topcoder-logo" href="{home_link format=" %url"}"
-            ><img src="/themes/topcoder-theme/design/images/topcoder-logo.svg"></img></a
-          ><span class="Header-separator"></span
-          ><a class="Header-primary-item" href="https://www.topcoder.com"
-            >BUSINESS</a
-          ><span class="Header-separator"></span
-          ><a class="Header-primary-item primary-item-community">COMMUNITY</a>
+        <span id="menu-button" class="hide"></span>
+        <span class="hide-desktop menu-icon-mobile">
+          <img class="icon-menu" src="/themes/topcoder-theme/design/images/icon-menu.svg" />
+          <img class="icon-menu-close" width="16" src="/themes/topcoder-theme/design/images/icon-close.svg" />
+        </span>
+        <nav class="Header-desktopNav hide-mobile">
+          <a class="Topcoder-logo" href="{home_link format=" %url"}">
+            <img src="/themes/topcoder-theme/design/images/topcoder-logo.svg" />
+          </a>
+          <span class="Header-separator"></span>
+          <a class="Header-primary-item" href="https://www.topcoder.com">BUSINESS</a>
+          <span class="Header-separator"></span>
+          <a class="Header-primary-item primary-item-community">COMMUNITY</a>
           <div class="Header-secondary-menu">
-            <a class="Header-secondary-item primary-item-compete">Compete</a
-            ><a class="Header-secondary-item primary-item-tracks">Tracks</a
-            ><a class="Header-secondary-item selected primary-item-explore">Explore</a>
+            <a class="Header-secondary-item primary-item-compete">Compete</a>
+            <a class="Header-secondary-item primary-item-tracks">Tracks</a>
+            <a class="Header-secondary-item selected primary-item-explore">Explore</a>
+            <div class="Header-Primary-more-content-container">
+              <a class="Header-secondary-item primary-item-more"><span>More</span> <img src="/themes/topcoder-theme/design/images/icon-down-white.svg" /></a>
+              <div class="Header-Primary-more-content">
+                <a class="Header-secondary-item primary-item-compete">Compete</a>
+                <a class="Header-secondary-item primary-item-tracks">Tracks</a>
+                <a class="Header-secondary-item selected primary-item-explore">Explore</a>
+              </div>
+            </div>
+
           </div>
         </nav>
+        <a class="Topcoder-logo hide-desktop" href="{home_link format=" %url"}"><img width="54" src="/themes/topcoder-theme/design/images/topcoder-logo.svg"></img></a>
 
-
-
-        <div class="Header-flexSpacer"></div>
+        <div class="Header-flexSpacer hide-mobile"></div>
         <div class="Header-right">
-          {community_chooser buttonType='titleBarLink' buttonClass='Header-desktopCommunityChooser'}
-          <div class="MeBox-header Header-right-Item">
+          <div class="MeBox-header Header-right-Item hide-mobile">
             {module name="MeModule" CssClass="FlyoutRight"}
           </div>
           {if $User.SignedIn}
@@ -54,9 +53,7 @@
             </span>
           </button>
           {/if}
-          <div
-            class="Header-right-Item"
-          >
+          <div class="Header-right-Item hide-mobile">
             <img src="/themes/topcoder-theme/design/images/icon-search.svg"></img>
           </div>
         </div>
@@ -65,9 +62,6 @@
     <nav class="Navigation needsInitialization js-nav">
       <div class="Container">
         {$smarty.capture.menu}
-        <div class='Navigation-linkContainer'>
-          {community_chooser buttonType='reset' fullWidth=true buttonClass='Navigation-link'}
-        </div>
       </div>
     </nav>
     <nav class="mobileMebox js-mobileMebox needsInitialization">
@@ -80,122 +74,90 @@
     </nav>
   </header>
 
-  <div class="Header-Second-Menu Explore-Menu">
+
+
+  <div class="Header-Second-Menu Explore-Menu hide-mobile">
     <div class="Second-Menu-Content">
-      <a
-        class="Second-Menu-Link"
-        href="https://www.topcoder.com/community/member-programs/topcoder-open"
-        ><span>TCO</span
-        ></a
-      >
-      <a
-        class="Second-Menu-Link"
-        href="https://www.topcoder.com/community/member-programs"
-        ><span>Programs</span
-        ></a
-      >
-      <a
-        class="Second-Menu-Link selected"
-        href="javascript:;"
-        ><span>Forums</span
-        ></a
-      ><a
-        class="Second-Menu-Link"
-        href="https://www.topcoder.com/community/statistics"
-        target=""
-        ><span>Statistics</span
-        ></a
-      ><a class="Second-Menu-Link"
-        href="https://www.topcoder.com/blog"
-        ><span>Blog</span></a
-      >
-      <a
-        class="Second-Menu-Link"
-        href="https://www.topcoder.com/thrive"
-        ><span>Thrive</span
-        ></a
-      >
+      <a class="Second-Menu-Link" href="https://www.topcoder.com/community/member-programs/topcoder-open"><span>TCO</span></a>
+      <a class="Second-Menu-Link" href="https://www.topcoder.com/community/member-programs"><span>Programs</span></a>
+      <a class="Second-Menu-Link selected" href="javascript:;"><span>Forums</span></a><a class="Second-Menu-Link" href="https://www.topcoder.com/community/statistics" target=""><span>Statistics</span></a><a class="Second-Menu-Link" href="https://www.topcoder.com/blog"><span>Blog</span></a>
+      <a class="Second-Menu-Link" href="https://www.topcoder.com/thrive"><span>Thrive</span></a>
     </div>
   </div>
 
-  <div class="Header-Second-Menu Tracks-Menu hide">
+  <div class="Header-Second-Menu Tracks-Menu hide hide-mobile">
     <div class="Second-Menu-Content">
-      <a
-        class="Second-Menu-Link"
-        href="https://www.topcoder.com/thrive/tracks?track=Competitive%20Programming"
-        ><span>Competitive Programming</span
-        ></a
-      >
-      <a
-        class="Second-Menu-Link"
-        href="https://www.topcoder.com/thrive/tracks?track=Data%20Science&tax="
-        ><span>Data Science</span
-        ></a
-      >
-      <a
-        class="Second-Menu-Link"
-        href="https://www.topcoder.com/thrive/tracks?track=Design&tax="
-        ><span>Design</span
-        ></a
-      ><a
-        class="Second-Menu-Link"
-        href="https://www.topcoder.com/thrive/tracks?track=Development&tax="
-        target=""
-        ><span>Development</span
-        ></a
-      ><a class="Second-Menu-Link"
-        href="https://www.topcoder.com/thrive/tracks?track=QA&tax="
-        ><span>QA</span></a
-      >
+      <a class="Second-Menu-Link" href="https://www.topcoder.com/thrive/tracks?track=Competitive%20Programming"><span>Competitive Programming</span></a>
+      <a class="Second-Menu-Link" href="https://www.topcoder.com/thrive/tracks?track=Data%20Science&tax="><span>Data Science</span></a>
+      <a class="Second-Menu-Link" href="https://www.topcoder.com/thrive/tracks?track=Design&tax="><span>Design</span></a><a class="Second-Menu-Link" href="https://www.topcoder.com/thrive/tracks?track=Development&tax=" target=""><span>Development</span></a><a class="Second-Menu-Link" href="https://www.topcoder.com/thrive/tracks?track=QA&tax="><span>QA</span></a>
     </div>
   </div>
 
-  <div class="Header-Second-Menu Compete-Menu hide">
+  <div class="Header-Second-Menu Compete-Menu hide hide-mobile">
     <div class="Second-Menu-Content">
-      <a
-        class="Second-Menu-Link"
-        href="https://www.topcoder.com/challenges"
-        ><span>All Challenges</span
-        ></a
-      >
-      <a
-        class="Second-Menu-Link"
-        href="https://arena.topcoder.com"
-        ><span>Competitive Programming</span
-        ></a
-      >
-      <a
-        class="Second-Menu-Link"
-        href="https://www.topcoder.com/community/taas"
-        target=""
-        ><span>Gig Work</span
-        ></a
-      >
+      <a class="Second-Menu-Link" href="https://www.topcoder.com/challenges"><span>All Challenges</span></a>
+      <a class="Second-Menu-Link" href="https://arena.topcoder.com"><span>Competitive Programming</span></a>
+      <a class="Second-Menu-Link" href="https://www.topcoder.com/community/taas" target=""><span>Gig Work</span></a>
     </div>
   </div>
 
-  <div class="Header-Second-Menu Community-Menu hide">
+  <div class="Header-Second-Menu Community-Menu hide hide-mobile">
     <div class="Second-Menu-Content">
-      <a
-        class="Second-Menu-Link"
-        href="https://www.topcoder.com/my-dashboard"
-        ><span>Dashboard</span
-        ></a
-      >
-      <a
-        class="Second-Menu-Link"
-        href="https://www.topcoder.com/members/{if $User.SignedIn}{$Profile.Name|escape:'html'}{/if}"
-        ><span>My Profile</span
-        ></a
-      >
-      <a
-        class="Second-Menu-Link"
-        href="https://community.topcoder.com/PactsMemberServlet?module=PaymentHistory&full_list=false"
-        target="_blank"
-        ><span>Payments</span
-        ></a
-      >
+      <a class="Second-Menu-Link" href="https://www.topcoder.com/my-dashboard"><span>Dashboard</span></a>
+      <a class="Second-Menu-Link" href="https://www.topcoder.com/members/{if $User.SignedIn}{$Profile.Name|escape:'html'}{/if}"><span>My Profile</span></a>
+      <a class="Second-Menu-Link" href="https://community.topcoder.com/PactsMemberServlet?module=PaymentHistory&full_list=false" target="_blank"><span>Payments</span></a>
     </div>
   </div>
+
+  <div class="Header-Primary-container-Mobile hide-desktop">
+    <div class="Header-Primary-Mobile hide-desktop">
+      <a class="flex-1 center-child" href="https://www.topcoder.com">BUSINESS</a>
+      <span class="Header-separator"></span>
+      <a class="flex-1 center-child selected">COMMUNITY</a>
+    </div>
+
+    <div class="Header-Primary-Sub-Mobile ">
+      <a class="primary-item-compete">Compete</a>
+      <a class="primary-item-tracks">Tracks</a>
+      <a class="primary-item-explore selected">Explore</a></div>
+  </div>
+
+  <div class="Header-Second-Menu-mobile Explore-Menu hide-desktop">
+    <div class="Second-Menu-Toggle-Button">
+      <span>Explore</span>
+      <img src="/themes/topcoder-theme/design/images/icon-down-small.svg"></img>
+    </div>
+    <div class="Second-Menu-Content">
+      <a class="Second-Menu-Link" href="https://www.topcoder.com/community/member-programs/topcoder-open"><span>TCO</span></a>
+      <a class="Second-Menu-Link" href="https://www.topcoder.com/community/member-programs"><span>Programs</span></a>
+      <a class="Second-Menu-Link selected" href="javascript:;"><span>Forums</span></a><a class="Second-Menu-Link" href="https://www.topcoder.com/community/statistics" target=""><span>Statistics</span></a><a class="Second-Menu-Link" href="https://www.topcoder.com/blog"><span>Blog</span></a>
+      <a class="Second-Menu-Link" href="https://www.topcoder.com/thrive"><span>Thrive</span></a>
+    </div>
+  </div>
+
+  <div class="Header-Second-Menu-mobile Compete-Menu hide-desktop hide">
+    <div class="Second-Menu-Toggle-Button">
+      <span>Compete</span>
+      <img src="/themes/topcoder-theme/design/images/icon-down-small.svg"></img>
+    </div>
+    <div class="Second-Menu-Content">
+      <a class="Second-Menu-Link" href="https://www.topcoder.com/challenges"><span>All Challenges</span></a>
+      <a class="Second-Menu-Link" href="https://arena.topcoder.com"><span>Competitive Programming</span></a>
+      <a class="Second-Menu-Link" href="https://www.topcoder.com/community/taas" target=""><span>Gig Work</span></a>
+    </div>
+  </div>
+
+  <div class="Header-Second-Menu-mobile Tracks-Menu hide-desktop hide">
+    <div class="Second-Menu-Toggle-Button">
+      <span>Tracks</span>
+      <img src="/themes/topcoder-theme/design/images/icon-down-small.svg"></img>
+    </div>
+    <div class="Second-Menu-Content">
+      <a class="Second-Menu-Link" href="https://www.topcoder.com/thrive/tracks?track=Competitive%20Programming"><span>Competitive Programming</span></a>
+      <a class="Second-Menu-Link" href="https://www.topcoder.com/thrive/tracks?track=Data%20Science&tax="><span>Data Science</span></a>
+      <a class="Second-Menu-Link" href="https://www.topcoder.com/thrive/tracks?track=Design&tax="><span>Design</span></a><a class="Second-Menu-Link" href="https://www.topcoder.com/thrive/tracks?track=Development&tax=" target=""><span>Development</span></a><a class="Second-Menu-Link" href="https://www.topcoder.com/thrive/tracks?track=QA&tax="><span>QA</span></a>
+    </div>
+  </div>
+
 
 </div>

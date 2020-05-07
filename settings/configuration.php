@@ -5,8 +5,9 @@
  * @license GPL-2.0-only
  */
 
-$Configuration['Garden']['MobileTheme'] = 'keystone';
+$Configuration['Garden']['MobileTheme'] = 'topcoder-theme';
+$Configuration['DebugAssets'] = TRUE;
 $Configuration['Badges']['BadgesModule']['Target'] = 'AfterUserInfo';
 $Configuration['Feature']['NewFlyouts']['Enabled'] = true;
 $Configuration['Feature']['DataDrivenTitleBar']['Enabled'] = false;
-// $Configuration['Debug'] = TRUE;
+$Configuration['Debug'] = TRUE;
