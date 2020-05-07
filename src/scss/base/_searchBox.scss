@@ -33,3 +33,13 @@
     margin-bottom: 24px;
   }
 }
+
+
+
+@media screen and (max-width: 768px) {
+  .SearchBoxMobile {
+    .SearchBox {
+      margin-bottom: 8px;
+    }
+  }
+}

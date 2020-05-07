@@ -6,3 +6,7 @@
 
 import "../../node_modules/@vanillaforums/theme-boilerplate/src/js/index";
 import "./header";
+import "./body";
+import "./discussions";
+import "./pageControls";
+import "./categories";

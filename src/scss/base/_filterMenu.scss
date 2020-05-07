@@ -1,18 +1,22 @@
 .Box.BoxCategories,
 .BoxFilter.BoxDiscussionFilter {
+  margin: 19px 0 !important;
+
   h4 {
     @include barlow-semibold;
 
-    font-size: 20px;
+    font-size: 21px;
     line-height: 24px;
     text-transform: uppercase;
     color: $global-color_black_light;
+    padding: 0;
+    margin-top: 35px;
   }
 
   ul.PanelInfo.PanelCategories,
   ul.FilterMenu {
     li {
-      margin: 7px 0 !important;
+      margin: 19px 0 !important;
 
       &.Active {
         background-color: $global-grey-bg;
@@ -27,10 +31,11 @@
         color: $global-color_black_light;
         font-size: 16px;
         font-weight: 700;
+        padding: 0;
       }
 
       a {
-        height: 30px;
+        height: 26px;
         padding: 0 22px;
         font-size: 16px;
 
@@ -61,6 +66,19 @@
           }
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Panel-main .Box.BoxCategories,
+  .Box.BoxCategories,
+  .BoxFilter.BoxDiscussionFilter {
+    h4 {
+      @include barlow-semibold;
+
+      font-size: 21px;
+      line-height: 24px;
     }
   }
 }

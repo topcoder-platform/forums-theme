@@ -25,13 +25,66 @@
   }
 }
 
-h1.H,
-h1.HomepageTitle,
-h1 {
-  @include barlowcondensed-medium;
-  color: $global-color_black_light !important;
-  font-size: 34px !important;
-  font-weight: 500 !important;
-  line-height: 38px !important;
-  text-transform: uppercase !important;
+.Vanilla {
+  h1.H,
+  h1.HomepageTitle,
+  h1 {
+    @include barlowcondensed-medium;
+    color: $global-color_black_light !important;
+    font-size: 34px !important;
+    font-weight: 500 !important;
+    line-height: 38px !important;
+    text-transform: uppercase !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .Frame-body {
+    .Frame-content {
+      .Frame-details {
+        .Frame-row-main {
+          aside.Panel.Panel-main {
+            width: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Frame-body {
+    .Frame-content {
+      .Frame-contentWrap {
+        padding-top: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        .Frame-details {
+          .Frame-row {
+            .Content.MainContent {
+              width: 100%;
+              overflow: hidden;
+
+              h1.H,
+              h1.HomepageTitle,
+              h1 {
+                margin-top: 14px;
+              }
+            }
+          }
+
+          .Frame-row-main {
+            flex-direction: column-reverse;
+
+            aside.Panel.Panel-main {
+              margin-left: 0;
+              margin-right: 0;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
 }

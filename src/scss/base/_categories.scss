@@ -1,0 +1,39 @@
+@media screen and (max-width: 768px) {
+  .DataList.CategoryList {
+    li.Item {
+      .ItemContent.Category {
+        .status-container {
+          .RSS,
+          .DiscussionCount,
+          .CommentCount {
+            display: none;
+          }
+        }
+
+        .view-comment-container {
+          .LastDiscussionTitle,
+          .LastCommentDate {
+            display: none;
+          }
+
+          .DiscussionCount {
+            position: relative;
+
+            &::after {
+              content: '';
+              width: 3px;
+              height: 3px;
+              border-radius: 50%;
+              background: $global-color_grey;
+              position: absolute;
+              display: block;
+              right: -8px;
+              margin-top: -2px;
+              top: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

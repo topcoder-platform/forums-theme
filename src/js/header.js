@@ -7,32 +7,47 @@
 
 
 $( document ).ready(function() {
+  var frameHeader = $('.Frame-header');
+
   var resetSelectedMenu = function() {
-    $(".Header-primary-item, .Header-secondary-item").removeClass('selected');
-    $(".Header-Second-Menu").addClass('hide');
+    $(".Header-primary-item, .Header-secondary-item, .Header-Primary-Sub-Mobile a").removeClass('selected');
+    $(".Header-Second-Menu, .Header-Second-Menu-mobile").addClass('hide').removeClass('open');
+    frameHeader.toggleClass('toggle-mobile-expand');
+    frameHeader.toggleClass('toggle-mobile-close');
+    $(".Header-Primary-more-content-container").removeClass('open');
+
   };
 
   $( ".primary-item-explore" ).click(function() {
     resetSelectedMenu();
-    $(this).addClass('selected');
-    $(".Header-Second-Menu.Explore-Menu").removeClass('hide');
+    $(".primary-item-explore").addClass('selected');
+    $(".Header-Second-Menu.Explore-Menu, .Header-Second-Menu-mobile.Explore-Menu").removeClass('hide');
   });
 
   $( ".primary-item-tracks" ).click(function() {
     resetSelectedMenu();
-    $(this).addClass('selected');
-    $(".Header-Second-Menu.Tracks-Menu").removeClass('hide');
+    $(".primary-item-tracks").addClass('selected');
+    $(".Header-Second-Menu.Tracks-Menu, .Header-Second-Menu-mobile.Tracks-Menu").removeClass('hide');
   });
 
   $( ".primary-item-compete" ).click(function() {
     resetSelectedMenu();
-    $(this).addClass('selected');
-    $(".Header-Second-Menu.Compete-Menu").removeClass('hide');
+    $(".primary-item-compete").addClass('selected');
+    $(".Header-Second-Menu.Compete-Menu, .Header-Second-Menu-mobile.Compete-Menu").removeClass('hide');
   });
 
   $( ".primary-item-community" ).click(function() {
     resetSelectedMenu();
     $(this).addClass('selected');
     $(".Header-Second-Menu.Community-Menu").removeClass('hide');
+  });
+
+
+  $( ".menu-icon-mobile" ).click(function() {
+    frameHeader.toggleClass('toggle-mobile-expand');
+    frameHeader.toggleClass('toggle-mobile-close');
+  });
+  $( ".Second-Menu-Toggle-Button, .primary-item-more" ).click(function() {
+    $(this).parent().toggleClass('open');
   });
 });

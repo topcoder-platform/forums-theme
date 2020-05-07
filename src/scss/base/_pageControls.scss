@@ -9,12 +9,13 @@
     a {
       border-color: transparent;
       border-radius: 15px;
-      font-size: 12px;
+      font-size: 14px;
       font-weight: 400;
       line-height: 30px;
       height: 30px;
       padding: 0 15px;
       margin: 0 1px;
+      flex: unset;
 
       &.Highlight.Pager-p {
         background-color: $global-grey-bg-dark;
@@ -25,9 +26,14 @@
       }
     }
 
-    a.Pager-nav {
+    .Pager-nav {
+      font-weight: 500;
       color: white;
       background-color: $global-color_primary;
+
+      &[aria-disabled="true"] {
+        display: none;
+      }
     }
   }
 }
