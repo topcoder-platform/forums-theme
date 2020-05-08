@@ -10,3 +10,4 @@ import "./body";
 import "./discussions";
 import "./pageControls";
 import "./categories";
+import "./formsFields";
