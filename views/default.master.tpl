@@ -29,7 +29,7 @@
         {if !$DataDrivenTitleBar}
             <div class="Navigation-row">
                 <div class="SignIn mobile">
-                    {module name="MeModule"}
+                    {module name="TopcoderMeModule"}
                 </div>
             </div>
         {/if}

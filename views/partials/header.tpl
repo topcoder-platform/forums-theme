@@ -44,7 +44,7 @@
         <div class="Header-flexSpacer hide-mobile"></div>
         <div class="Header-right">
           <div class="MeBox-header Header-right-Item hide-mobile">
-            {module name="MeModule" CssClass="FlyoutRight"}
+            {module name="TopcoderMeModule" CssClass="FlyoutRight"}
           </div>
           {if $User.SignedIn}
           <button class="mobileMeBox-button">
@@ -66,7 +66,7 @@
     </nav>
     <nav class="mobileMebox js-mobileMebox needsInitialization">
       <div class="Container">
-        {module name="MeModule"}
+        {module name="TopcoderMeModule"}
         <button class="mobileMebox-buttonClose Close">
           <span>×</span>
         </button>
