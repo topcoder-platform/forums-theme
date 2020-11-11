@@ -3,12 +3,90 @@
  * @copyright 2009-2018 Vanilla Forums Inc.
  * @license GPL-2.0-only
  */
+/* -------------------------------------------------------------- *\
+   Copy default scss  files and
+\* -------------------------------------------------------------- */
 
-/* ------------------ Theme ------------------ */
 
-@import "base/index";
-@import "pages/index";
+@import 'base';
 
-/* --------------- Boilerplate --------------- */
+/* -------------------------------------------------------------- *\
+    Variables
+\* -------------------------------------------------------------- */
 
-@import "../../node_modules/@vanillaforums/theme-boilerplate/src/scss/custom";
+@import "../../node_modules/@vanillaforums/theme-boilerplate/src/scss/base/variables";
+@import "../../node_modules/@vanillaforums/theme-boilerplate/src/scss/patches/core-variables";
+
+/* -------------------------------------------------------------- *\
+    Base
+\* -------------------------------------------------------------- */
+
+@import "../../node_modules/@vanillaforums/theme-boilerplate/src/scss/base/icons";
+@import "../../node_modules/@vanillaforums/theme-boilerplate/src/scss/base/utilities";
+@import "../../node_modules/@vanillaforums/theme-boilerplate/src/scss/base/typography";
+@import "../../node_modules/@vanillaforums/theme-boilerplate/src/scss/sections/frame";
+@import "../../node_modules/@vanillaforums/theme-boilerplate/src/scss/mixins/mixin.text";
+@import "../../node_modules/@vanillaforums/theme-boilerplate/src/scss/mixins/mixin.listStyles";
+
+/* -------------------------------------------------------------- *\
+    Patches
+\* -------------------------------------------------------------- */
+
+@import "../../node_modules/@vanillaforums/theme-boilerplate/src/scss/patches/core-patches";
+
+// Vanilla's core styles use SpriteSheets for all icons included.
+// Vanilla bundles its own font icons as well - Vanillicon.
+// This patches replace all sprite instances with font icons.
+// The core theme can't do this for backwards compatibility reasons.
+@import "../../node_modules/@vanillaforums/theme-boilerplate/src/scss/patches/vanillicon-variables";
+@import "../../node_modules/@vanillaforums/theme-boilerplate/src/scss/patches/vanillicon-general-patches";
+@import "../../node_modules/@vanillaforums/theme-boilerplate/src/scss/patches/vanillicon-panel-patches";
+
+/* -------------------------------------------------------------- *\
+    Components
+\* -------------------------------------------------------------- */
+@import "../../node_modules/@vanillaforums/theme-boilerplate/src/scss/components/breadcrumbs";
+@import "../../node_modules/@vanillaforums/theme-boilerplate/src/scss/components/count";
+@import "../../node_modules/@vanillaforums/theme-boilerplate/src/scss/components/datepicker";
+@import "../../node_modules/@vanillaforums/theme-boilerplate/src/scss/components/tags";
+@import "../../node_modules/@vanillaforums/theme-boilerplate/src/scss/components/forms";
+@import "../../node_modules/@vanillaforums/theme-boilerplate/src/scss/components/flyouts";
+@import "../../node_modules/@vanillaforums/theme-boilerplate/src/scss/components/hamburger";
+@import "../../node_modules/@vanillaforums/theme-boilerplate/src/scss/components/ideation";
+@import "../../node_modules/@vanillaforums/theme-boilerplate/src/scss/components/lists";
+@import "../../node_modules/@vanillaforums/theme-boilerplate/src/scss/components/catalogueDisplay";
+@import "../../node_modules/@vanillaforums/theme-boilerplate/src/scss/components/mebox";
+@import "../../node_modules/@vanillaforums/theme-boilerplate/src/scss/components/modmessage";
+@import "../../node_modules/@vanillaforums/theme-boilerplate/src/scss/components/pager";
+@import "../../node_modules/@vanillaforums/theme-boilerplate/src/scss/components/polls";
+@import "../../node_modules/@vanillaforums/theme-boilerplate/src/scss/components/popup";
+@import "../../node_modules/@vanillaforums/theme-boilerplate/src/scss/components/reactions";
+@import "../../node_modules/@vanillaforums/theme-boilerplate/src/scss/components/richEditor";
+@import "../../node_modules/@vanillaforums/theme-boilerplate/src/scss/components/searchbox";
+@import "../../node_modules/@vanillaforums/theme-boilerplate/src/scss/components/swtichslider";
+@import "../../node_modules/@vanillaforums/theme-boilerplate/src/scss/components/tables";
+@import "../../node_modules/@vanillaforums/theme-boilerplate/src/scss/components/userContent";
+
+/* -------------------------------------------------------------- *\
+    Sections
+\* -------------------------------------------------------------- */
+
+@import "../../node_modules/@vanillaforums/theme-boilerplate/src/scss/sections/footer";
+@import "../../node_modules/@vanillaforums/theme-boilerplate/src/scss/sections/header";
+@import "../../node_modules/@vanillaforums/theme-boilerplate/src/scss/sections/navigation";
+@import "../../node_modules/@vanillaforums/theme-boilerplate/src/scss/sections/panel";
+
+/* -------------------------------------------------------------- *\
+    Pages
+\* -------------------------------------------------------------- */
+
+@import "../../node_modules/@vanillaforums/theme-boilerplate/src/scss/pages/activity";
+@import "../../node_modules/@vanillaforums/theme-boilerplate/src/scss/pages/badges";
+@import "../../node_modules/@vanillaforums/theme-boilerplate/src/scss/pages/bestof";
+@import "../../node_modules/@vanillaforums/theme-boilerplate/src/scss/pages/drafts";
+@import "../../node_modules/@vanillaforums/theme-boilerplate/src/scss/pages/entry";
+@import "../../node_modules/@vanillaforums/theme-boilerplate/src/scss/pages/groups";
+@import "../../node_modules/@vanillaforums/theme-boilerplate/src/scss/pages/inbox";
+@import "../../node_modules/@vanillaforums/theme-boilerplate/src/scss/pages/post";
+@import "../../node_modules/@vanillaforums/theme-boilerplate/src/scss/pages/profile";
+@import 'pages';
