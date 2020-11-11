@@ -124,7 +124,7 @@
                                         {asset name="Content"}
                                     </main>
                                     <aside class="Panel Panel-main">
-                                        {if !$SectionGroups && !$DataDrivenTitleBar}
+                                        {if !$SectionGroups && !$DataDrivenTitleBar && !inSection(["SearchResults"])}
                                             <div class="SearchBox js-sphinxAutoComplete" role="search">
                                                 {searchbox}
                                             </div>
