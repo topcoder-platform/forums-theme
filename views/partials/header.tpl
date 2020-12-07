@@ -13,12 +13,12 @@
       <div class="row">
         <span id="menu-button" class="hide"></span>
         <span class="hide-desktop menu-icon-mobile">
-          <img class="icon-menu" src="/themes/topcoder-theme/design/images/icon-menu.svg" />
-          <img class="icon-menu-close" width="16" src="/themes/topcoder-theme/design/images/icon-close.svg" />
+          <img class="icon-menu" src="/themes/topcoder/design/images/icon-menu.svg" />
+          <img class="icon-menu-close" width="16" src="/themes/topcoder/design/images/icon-close.svg" />
         </span>
         <nav class="Header-desktopNav hide-mobile">
           <a class="Topcoder-logo" href="{home_link format=" %url"}">
-            <img src="/themes/topcoder-theme/design/images/topcoder-logo.svg" />
+            <img src="/themes/topcoder/design/images/topcoder-logo.svg" />
           </a>
           <span class="Header-separator"></span>
           <a class="Header-primary-item" href="https://www.topcoder.com">BUSINESS</a>
@@ -29,7 +29,7 @@
             <a class="Header-secondary-item primary-item-tracks">Tracks</a>
             <a class="Header-secondary-item selected primary-item-explore">Explore</a>
             <div class="Header-Primary-more-content-container">
-              <a class="Header-secondary-item primary-item-more"><span>More</span> <img src="/themes/topcoder-theme/design/images/icon-down-white.svg" /></a>
+              <a class="Header-secondary-item primary-item-more"><span>More</span> <img src="/themes/topcoder/design/images/icon-down-white.svg" /></a>
               <div class="Header-Primary-more-content">
                 <a class="Header-secondary-item primary-item-compete">Compete</a>
                 <a class="Header-secondary-item primary-item-tracks">Tracks</a>
@@ -39,7 +39,7 @@
 
           </div>
         </nav>
-        <a class="Topcoder-logo hide-desktop" href="{home_link format=" %url"}"><img width="54" src="/themes/topcoder-theme/design/images/topcoder-logo.svg"></img></a>
+        <a class="Topcoder-logo hide-desktop" href="{home_link format=" %url"}"><img width="54" src="/themes/topcoder/design/images/topcoder-logo.svg"></img></a>
 
         <div class="Header-flexSpacer hide-mobile"></div>
         <div class="Header-right">
@@ -54,7 +54,7 @@
           </button>
           {/if}
           <div class="Header-right-Item hide-mobile">
-            <img src="/themes/topcoder-theme/design/images/icon-search.svg"></img>
+            <img src="/themes/topcoder/design/images/icon-search.svg"></img>
           </div>
         </div>
       </div>
@@ -125,7 +125,7 @@
   <div class="Header-Second-Menu-mobile Explore-Menu hide-desktop">
     <div class="Second-Menu-Toggle-Button">
       <span>Explore</span>
-      <img src="/themes/topcoder-theme/design/images/icon-down-small.svg"></img>
+      <img src="/themes/topcoder/design/images/icon-down-small.svg"></img>
     </div>
     <div class="Second-Menu-Content">
       <a class="Second-Menu-Link" href="https://www.topcoder.com/community/member-programs/topcoder-open"><span>TCO</span></a>
@@ -138,7 +138,7 @@
   <div class="Header-Second-Menu-mobile Compete-Menu hide-desktop hide">
     <div class="Second-Menu-Toggle-Button">
       <span>Compete</span>
-      <img src="/themes/topcoder-theme/design/images/icon-down-small.svg"></img>
+      <img src="/themes/topcoder/design/images/icon-down-small.svg"></img>
     </div>
     <div class="Second-Menu-Content">
       <a class="Second-Menu-Link" href="https://www.topcoder.com/challenges"><span>All Challenges</span></a>
@@ -150,7 +150,7 @@
   <div class="Header-Second-Menu-mobile Tracks-Menu hide-desktop hide">
     <div class="Second-Menu-Toggle-Button">
       <span>Tracks</span>
-      <img src="/themes/topcoder-theme/design/images/icon-down-small.svg"></img>
+      <img src="/themes/topcoder/design/images/icon-down-small.svg"></img>
     </div>
     <div class="Second-Menu-Content">
       <a class="Second-Menu-Link" href="https://www.topcoder.com/thrive/tracks?track=Competitive%20Programming"><span>Competitive Programming</span></a>

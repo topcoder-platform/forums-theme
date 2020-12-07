@@ -8,7 +8,7 @@ Custom theme for Topcoder Theme.
 ## Notes
 
 - This theme needs the `Feature.NewFlyouts.Enabled` config set as `true` for the flyouts to work properly.
-- The theme name should be equal the `key` property in `addon.json` (example it should be `topcoder-theme` with current key value)
+- The theme name should be equal the `key` property in `addon.json` (example it should be `topcoder` with current key value)
 
 ## Building Styles / Javascript / Images
 
