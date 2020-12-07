@@ -6,7 +6,7 @@
     content: "";
     width: 16px;
     height: 16px;
-    background: url(/themes/topcoder-theme/design/images/bookmark.png);
+    background: url(/themes/topcoder/design/images/bookmark.png);
     background-size: 16px;
   }
 
@@ -14,7 +14,7 @@
   &:hover {
     &::before {
       content: "";
-      background: url(/themes/topcoder-theme/design/images/bookmarked.png);
+      background: url(/themes/topcoder/design/images/bookmarked.png);
       background-size: 16px;
       width: 16px;
       height: 16px;
@@ -29,7 +29,7 @@
     content: "";
     width: 16px;
     height: 16px;
-    background: url(/themes/topcoder-theme/design/images/icon-thee-dot.svg);
+    background: url(/themes/topcoder/design/images/icon-thee-dot.svg);
     background-size: 16px 4px;
     background-position: center;
     font-size: 0 !important;

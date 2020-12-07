@@ -19,7 +19,7 @@ class TopcoderThemeHooks extends \Gdn_Plugin {
       saveToConfig(array(
           'Vanilla.Discussions.Layout' => 'modern',
           'Vanilla.Categories.Layout' => 'modern',
-          'Garden.MobileTheme' => 'topcoder-theme'
+          'Garden.MobileTheme' => 'topcoder'
       ), null, true);
       return true;
     }
