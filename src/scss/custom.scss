@@ -3,17 +3,97 @@
 \* -------------------------------------------------------------- */
 
 $staticVariables : true;
-@import "base/variables";
-@import "./../../node_modules/@vanilla/theme-core/scss/core";
+/* -------------------------------------------------------------- *\
+    Topcoder Base
+\* -------------------------------------------------------------- */
+
+@import "base/index";
+
+
+/* -------------------------------------------------------------- *\
+    Variables
+\* -------------------------------------------------------------- */
+
+@import "../../node_modules/@vanilla/theme-core/scss/base/variables";
+@import "../../node_modules/@vanilla/theme-core/scss/patches/core-variables";
 
 /* -------------------------------------------------------------- *\
     Base
 \* -------------------------------------------------------------- */
 
-@import "base/index";
+@import "../../node_modules/@vanilla/theme-core/scss/base/icons";
+@import "../../node_modules/@vanilla/theme-core/scss/base/utilities";
+@import "../../node_modules/@vanilla/theme-core/scss/base/typography";
+@import "../../node_modules/@vanilla/theme-core/scss/sections/frame";
+@import "../../node_modules/@vanilla/theme-core/scss/mixins/mixin.text";
+@import "../../node_modules/@vanilla/theme-core/scss/mixins/mixin.listStyles";
+
+/* -------------------------------------------------------------- *\
+    Patches
+\* -------------------------------------------------------------- */
+
+@import "../../node_modules/@vanilla/theme-core/scss/patches/core-patches";
+
+// Vanilla's core styles use SpriteSheets for all icons included.
+// Vanilla bundles its own font icons as well - Vanillicon.
+// This patches replace all sprite instances with font icons.
+// The core theme can't do this for backwards compatibility reasons.
+@import "../../node_modules/@vanilla/theme-core/scss/patches/vanillicon-variables";
+@import "../../node_modules/@vanilla/theme-core/scss/patches/vanillicon-general-patches";
+@import "../../node_modules/@vanilla/theme-core/scss/patches/vanillicon-panel-patches";
+
+/* -------------------------------------------------------------- *\
+    Components
+\* -------------------------------------------------------------- */
+
+@import "../../node_modules/@vanilla/theme-core/scss/components/breadcrumbs";
+@import "../../node_modules/@vanilla/theme-core/scss/components/count";
+@import "../../node_modules/@vanilla/theme-core/scss/components/datepicker";
+@import "../../node_modules/@vanilla/theme-core/scss/components/tags";
+@import "../../node_modules/@vanilla/theme-core/scss/components/forms";
+@import "../../node_modules/@vanilla/theme-core/scss/components/flyouts";
+@import "../../node_modules/@vanilla/theme-core/scss/components/hamburger";
+@import "../../node_modules/@vanilla/theme-core/scss/components/herobanner";
+@import "../../node_modules/@vanilla/theme-core/scss/components/ideation";
+@import "../../node_modules/@vanilla/theme-core/scss/components/lists";
+@import "../../node_modules/@vanilla/theme-core/scss/components/catalogueDisplay";
+@import "../../node_modules/@vanilla/theme-core/scss/components/mebox";
+@import "../../node_modules/@vanilla/theme-core/scss/components/modmessage";
+@import "../../node_modules/@vanilla/theme-core/scss/components/pager";
+@import "../../node_modules/@vanilla/theme-core/scss/components/polls";
+@import "../../node_modules/@vanilla/theme-core/scss/components/popup";
+@import "../../node_modules/@vanilla/theme-core/scss/components/reactions";
+@import "../../node_modules/@vanilla/theme-core/scss/components/richEditor";
+@import "../../node_modules/@vanilla/theme-core/scss/components/searchbox";
+@import "../../node_modules/@vanilla/theme-core/scss/components/swtichslider";
+@import "../../node_modules/@vanilla/theme-core/scss/components/tables";
+@import "../../node_modules/@vanilla/theme-core/scss/components/userContent";
+
+/* -------------------------------------------------------------- *\
+    Sections
+\* -------------------------------------------------------------- */
+
+@import "../../node_modules/@vanilla/theme-core/scss/sections/footer";
+@import "../../node_modules/@vanilla/theme-core/scss/sections/header";
+@import "../../node_modules/@vanilla/theme-core/scss/sections/navigation";
+@import "../../node_modules/@vanilla/theme-core/scss/sections/panel";
 
 /* -------------------------------------------------------------- *\
     Pages
+\* -------------------------------------------------------------- */
+
+@import "../../node_modules/@vanilla/theme-core/scss/pages/activity";
+@import "../../node_modules/@vanilla/theme-core/scss/pages/badges";
+@import "../../node_modules/@vanilla/theme-core/scss/pages/bestof";
+@import "../../node_modules/@vanilla/theme-core/scss/pages/drafts";
+@import "../../node_modules/@vanilla/theme-core/scss/pages/entry";
+@import "../../node_modules/@vanilla/theme-core/scss/pages/groups";
+@import "../../node_modules/@vanilla/theme-core/scss/pages/inbox";
+@import "../../node_modules/@vanilla/theme-core/scss/pages/post";
+@import "../../node_modules/@vanilla/theme-core/scss/pages/profile";
+
+/* -------------------------------------------------------------- *\
+   Topcoder Pages
 \* -------------------------------------------------------------- */
 
 @import 'pages/index';
