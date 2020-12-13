@@ -99,7 +99,7 @@
                                 {/if}
                                 {if !$DataDrivenTitleBar}
                                     <div class="Frame-row SearchBoxMobile">
-                                        {if !$SectionGroups && !inSection(["SearchResults"])}
+                                        {if !inSection(["SearchResults"]) && !inSection("Group") && !inSection("GroupList")}
                                             <div class="SearchBox js-sphinxAutoComplete" role="search">
                                                 {if $hasAdvancedSearch === true}
                                                     {module name="AdvancedSearchModule"}
@@ -110,6 +110,13 @@
                                         {/if}
                                     </div>
                                 {/if}
+                                {if ismobile() && !$isHomepage && !inSection("PostDiscussion") && !inSection("Group") &&
+                                !inSection("GroupList") && !inSection("SearchResults")}
+                                    <div class="Frame-row NewDiscussionMobile">
+                                        {module name="NewDiscussionModule" reorder=$DataDrivenTitleBar}
+                                    </div>
+                                {/if}
+
                                 <div class="Frame-row Frame-row-main">
                                     <main class="Content MainContent">
                                         {if inSection("Profile")}
