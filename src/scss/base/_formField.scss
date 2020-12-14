@@ -154,15 +154,35 @@ form {
           .Button {
             margin-bottom: 20px;
           }
-
           .DiscussionButton {
             width: 100%;
+          }
+          .Cancel, .DraftButton {
+            text-align:center;
+            width:40%;
           }
         }
 
         .P {
           ul.List > li > b {
             display: none;
+          }
+        }
+      }
+    }
+  }
+
+  body.Post.editdiscussion {
+    .FormWrapper {
+      form {
+        .Buttons {
+          .Button {
+            width: 40%;
+          }
+          .Cancel {
+            text-align:center
+          }
+          .DiscussionButton {
           }
         }
       }
