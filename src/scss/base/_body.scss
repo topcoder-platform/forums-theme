@@ -38,6 +38,11 @@
   }
 }
 
+a.TextColor:hover,
+a:hover .TextColor {
+  color: $global-color_primary;
+}
+
 @media screen and (max-width: 992px) {
   .Frame-body {
     .Frame-content {
