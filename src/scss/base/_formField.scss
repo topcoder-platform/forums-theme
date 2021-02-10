@@ -84,6 +84,21 @@ form {
       padding: 0 4px !important;
       z-index: 1 !important;
     }
+
+    label[for='Form_RedirectLink'] {
+      color: $global-color_grey_dark !important;
+      font-size: 12px !important;
+      font-weight: 400 !important;
+      left: 20px !important;
+      top: 3px !important;
+      line-height: inherit;
+      position: absolute !important;
+      background: white !important;
+      width: auto !important;
+      right: auto !important;
+      padding: 0 4px !important;
+      z-index: 1 !important;
+    }
   }
 
   /* The container */
