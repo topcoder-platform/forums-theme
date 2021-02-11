@@ -90,14 +90,7 @@
                     <div class="Container">
                         <div class="Frame-contentWrap">
                             <div class="Frame-details">
-                                {if !$isHomepage}
-                                    <div class="Frame-row">
-                                        <nav class="BreadcrumbsBox">
-                                            {breadcrumbs}
-                                        </nav>
-                                    </div>
-                                {/if}
-                                {if !$DataDrivenTitleBar}
+                                   {if !$DataDrivenTitleBar}
                                     <div class="Frame-row SearchBoxMobile">
                                         {if !inSection(["SearchResults"]) && !inSection("Group") && !inSection("GroupList")}
                                             <div class="SearchBox js-sphinxAutoComplete" role="search">
@@ -119,6 +112,13 @@
 
                                 <div class="Frame-row Frame-row-main">
                                     <main class="Content MainContent">
+                                        {if !$isHomepage}
+                                            <div class="Frame-row">
+                                                <nav class="BreadcrumbsBox">
+                                                    {breadcrumbs}
+                                                </nav>
+                                            </div>
+                                        {/if}
                                         {if inSection("Profile")}
                                             <div class="Profile-header">
                                                 <div class="Profile-photo">

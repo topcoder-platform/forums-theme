@@ -1,6 +1,10 @@
 .DataListWrap,
 .Content.MainContent,
 .CommentsWrap {
+  .BeforeCommentHeading {
+    margin-bottom: 0px;
+  }
+
   h2.CommentHeading {
     @include barlow-bold;
 
@@ -78,6 +82,11 @@
     li.Item {
       padding: 18px 20px 17px 25px !important;
 
+      .Title {
+        color: $global-color_black_light;
+        margin-bottom: 14px;
+      }
+
       .PhotoWrap {
         top: 0;
         left: 0;
@@ -99,21 +108,28 @@
 }
 
 .MessageForm.CommentForm.FormTitleWrapper {
+  .H {
+    margin-bottom: 27px;
+  }
   h2 {
     text-transform: uppercase;
     color: $global-color_black_light;
+    font-family: $global-heading_fontFamily2;
     font-size: 20px;
     font-weight: 500;
     line-height: 24px;
   }
 }
 
+
 .FormTitleWrapper {
   .Buttons {
+
     .Back {
       margin-right: 20px !important;
       * {
         color: $global-blue;
+        font-family: $global-body_fontFamily;
       }
     }
   }

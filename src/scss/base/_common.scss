@@ -12,6 +12,10 @@
   justify-content: center;
 }
 
+.fill-remaining-space {
+  flex: auto;
+}
+
 @media screen and (max-width: 768px) {
   .hide-mobile {
     display: none !important;

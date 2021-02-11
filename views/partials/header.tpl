@@ -54,7 +54,7 @@
           </button>
           {/if}
           <div class="Header-right-Item hide-mobile">
-            <img src="/themes/topcoder/design/images/icon-search.svg"></img>
+            <a class="Search" href="/search"><img src="/themes/topcoder/design/images/icon-search.svg"></img></a>
           </div>
         </div>
       </div>

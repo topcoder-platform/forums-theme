@@ -1,0 +1,72 @@
+.DataList.Drafts {
+  li.Draft {
+    border-top: none;
+    border-bottom: none;
+    background-color: $global-grey-very-dark-bg;
+    margin-top: 16px;
+    border-radius: 10px;
+    padding: 19px 20px 18px 26px;
+
+    .Options {
+       a.Delete {
+         color: #555555;
+         font-family: $global-image_fontFamily;
+         font-size: 32px;
+         font-weight: $global-image_fontWeight;
+       }
+    }
+
+    .ItemContent {
+      .Title {
+        margin-bottom: 17px;
+        color: $global-color_black_light;
+
+        a {
+          color: $global-color_black_light;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 30px;
+        }
+      }
+
+      .Excerpt {
+        font-weight: 400;
+        line-height: 16px;
+
+        a {
+          color: $global-color_grey;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .DataList.Drafts {
+    li.Draft {
+      border-top: 1px solid $global-grey-bg;
+      background-color: transparent;
+      border-radius: 10px;
+      padding: 19px 0 18px 0;
+      border-radius: 0;
+      margin-top: 0;
+      position: relative;
+
+      &:first-child {
+        border-top: none;
+      }
+
+      &:last-child {
+        border-bottom: 1px solid $global-grey-bg;
+      }
+
+      .Options {
+        position: absolute;
+        top: 20px;
+        right: 0;
+      }
+
+    }
+  }
+}
