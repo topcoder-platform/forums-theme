@@ -1,0 +1,40 @@
+.EasyMDEContainer {
+
+  .CodeMirror {
+    box-sizing: border-box;
+    height: auto;
+    border-right: 1px solid #aaa;
+    border-left: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+   }
+
+  .editor-toolbar {
+    border-top-left-radius:8px;
+    border-top-right-radius:8px;
+    border-top: 1px solid #aaa;
+    border-left: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+  }
+
+  .editor-statusbar {
+      font-size: 13px;
+      padding: 8px 0px;
+      display: flex;
+      overflow: hidden;
+
+      span {
+        min-width:4em;
+        margin-left: 20px;
+      }
+     .upload-image {
+       margin-left: 0px;
+        margin-right: auto;
+     }
+
+    .autosave {
+
+    }
+  }
+}

@@ -5,17 +5,28 @@
     background-color: $global-grey-very-dark-bg;
     margin-top: 16px;
     border-radius: 10px;
-    padding: 19px 20px 18px 26px;
+    padding: 24px 20px 17px 26px;
 
     .Meta.Meta-Discussion {
-      display: flex;
       align-items: center;
 
       .MItem {
         font-size: 13px;
         font-weight: 400;
         line-height: 16px;
+
+        .HasNew.HasNew {
+          font-size: $global-small_fontSize;
+          font-family: $global-body_fontFamily;
+          text-transform: capitalize;
+          background: $global-color_white;
+          color: $global-color_black_light;
+          border: 1px solid $global-color_black_light;
+          margin-bottom: 0px;
+        }
       }
+
+
     }
 
     .MItem.Category {
@@ -26,12 +37,13 @@
 
     .ItemContent.Discussion {
       .Title {
-        margin-bottom: 17px;
+        margin-bottom: 14px;
 
         a {
           color: $global-color_black_light;
-          font-size: 20px;
-          font-weight: 400;
+          font-family: $global-body_fontFamily ;
+          font-size: $global-large_fontSize;
+          font-weight: bold;
           line-height: 30px;
         }
       }
@@ -58,6 +70,10 @@
       font-size: 13px;
       font-weight: 400;
       line-height: 16px;
+    }
+
+    .MiddleDot{
+      font-weight: bold;
     }
   }
 }

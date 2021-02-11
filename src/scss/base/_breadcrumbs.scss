@@ -9,6 +9,7 @@
     }
     .CrumbLabel {
       a {
+        text-decoration: none;
         span {
           color: $global-blue;
           font-size: 14px;
@@ -19,6 +20,7 @@
 
       &.Last {
         a {
+          text-decoration: none;
           span {
             color: $global-color_grey;
           }

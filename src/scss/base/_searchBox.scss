@@ -8,14 +8,20 @@
         font-size: 16px;
         padding-right: 56px;
         padding-left: 20px;
+        font-family: $global-body_fontFamily;
+      }
+
+      .InputBox.js-search {
+        border: 1px solid #aaa;
       }
 
       input.Button:hover,
       input.Button {
-        height: 100% !important;
+        height: 38px !important;
         width: 56px !important;
-        background: $global-color_primary !important;
+        background: $global-grey-bg !important;
         border-radius: 30px !important;
+        margin: 1px;
       }
 
       &::after {

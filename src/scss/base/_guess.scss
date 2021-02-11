@@ -1,17 +1,28 @@
 .Box.GuestBox {
   h4 {
+    @include barlowcondensed-medium;
     padding: 0;
     color: $global-color_black_light;
     font-size: 34px;
     font-weight: 400;
     line-height: 38px;
     margin-bottom: 10px;
+    text-transform: uppercase!important;
+    white-space: nowrap
   }
 
   p {
     color: $global-color_black_light;
-    font-size: 16px;
+    font-family: $global-body_fontFamily;
+    font-size: $global-large_fontSize;
     font-weight: 400;
     line-height: 26px;
   }
+
+  div {
+    a.SignIn {
+      margin-top: 24px;
+    }
+  }
+
 }

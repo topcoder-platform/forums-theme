@@ -36,6 +36,16 @@
             font-weight: 700;
             text-transform: uppercase;
 
+           a {
+             border: none;
+             font-size: 18px;
+             font-weight: bold;
+            }
+
+            a:hover, a:focus {
+              background-color: transparent;
+            }
+
             .SignInPopup {
               font-size: 18px;
               font-weight: 700;
