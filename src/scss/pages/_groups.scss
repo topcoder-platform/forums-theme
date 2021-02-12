@@ -11,3 +11,35 @@
     }
   }
 }
+
+.Section-GroupList .MainContent .H {
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  .Section-GroupList .DataList .Item .Options {
+    margin-top: 0px;
+  }
+}
+
+.Group-MembersPreview {
+  .PhotoWrap.PhotoWrap.PhotoWrap img {
+    margin: 0;
+    width: 42px;
+    height: 42px;
+  }
+}
+
+.Group-Header.NoBanner {
+  min-height: 1px;
+  display: flex;
+  .Group-Header-Info {
+    padding-left: 0;
+  }
+}
+
+Group-Header.HasBanner {
+  .Group-Header-Info {
+    margin: 20px;
+  }
+}

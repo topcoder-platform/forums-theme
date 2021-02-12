@@ -1,0 +1,28 @@
+.Table {
+  display: table;
+
+  .Title {
+    display: table-caption;
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+  }
+
+  .TableHeading,.TableRow {
+    display: table-row;
+    border-top: 1px solid #D4D4D4;;
+
+    .TableCell {
+      display: table-cell;
+      padding-left: 12px;
+    }
+
+  }
+
+  .TableHeading {
+    font-weight: bold;
+    text-align: center;
+  }
+
+
+}

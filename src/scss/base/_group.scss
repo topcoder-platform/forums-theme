@@ -1,0 +1,46 @@
+.Section-GroupList  {
+  .MainContent  {
+    .H {
+      text-align: left;
+    }
+  }
+}
+.Group {
+  font-family: $global-body_fontFamily !important;
+  .Group-Description {
+      color: $global-color_black_light;
+      font-size: $global-large_fontSize;
+      margin-bottom: 27px;
+    }
+  .Group-Header {
+    .Group-Info {
+      padding-left: 0px;
+
+      .Table {
+        width:  100%;
+        .TableRow {
+          .TableCell {
+            padding: 10px;
+            border-top: 1px solid #D4D4D4;
+            color: $global-color_black_light;
+            font-size: $global-medium_fontSize;
+          }
+          .Cell1 {
+            width: 10%;
+          }
+
+          .Cell2 {
+            color: $global-color_grey;
+            width: 90%;
+          }
+        }
+        .TableRow.Last {
+          .TableCell {
+            border-bottom: 1px solid #D4D4D4;
+          }
+        }
+
+      }
+    }
+  }
+}
