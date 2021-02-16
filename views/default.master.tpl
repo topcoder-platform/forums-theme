@@ -112,13 +112,11 @@
 
                                 <div class="Frame-row Frame-row-main">
                                     <main class="Content MainContent">
-                                        {if !$isHomepage}
                                             <div class="Frame-row">
                                                 <nav class="BreadcrumbsBox">
                                                     {breadcrumbs}
                                                 </nav>
                                             </div>
-                                        {/if}
                                         {if inSection("Profile")}
                                             <div class="Profile-header">
                                                 <div class="Profile-photo">
