@@ -77,7 +77,7 @@
             >
           </li>
           <li class="Footer-Menu-List-Item">
-            <a href="https://discussions.topcoder.com/">Forums</a>
+            <a href="https://discussions.topcoder.com">Forums</a>
           </li>
           <li class="Footer-Menu-List-Item">
             <a href="https://www.topcoder.com/community/statistics"
