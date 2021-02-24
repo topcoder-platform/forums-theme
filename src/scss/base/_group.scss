@@ -8,6 +8,7 @@
 .Group {
   font-family: $global-body_fontFamily !important;
   .Group-Description {
+      white-space: pre-line;
       color: $global-color_black_light;
       font-size: $global-large_fontSize;
       margin-bottom: 27px;
