@@ -97,7 +97,7 @@
     <div class="Second-Menu-Content">
       <a class="Second-Menu-Link" href="https://www.topcoder.com/challenges"><span>All Challenges</span></a>
       <a class="Second-Menu-Link" href="https://arena.topcoder.com"><span>Competitive Programming</span></a>
-      <a class="Second-Menu-Link" href="https://www.topcoder.com/community/taas" target=""><span>Gig Work</span></a>
+      <a class="Second-Menu-Link" href="https://www.topcoder.com/gigs" target=""><span>Gig Work</span></a>
     </div>
   </div>
 
