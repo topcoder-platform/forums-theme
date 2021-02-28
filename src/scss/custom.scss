@@ -69,6 +69,8 @@ $staticVariables : true;
 @import "../../node_modules/@vanilla/theme-core/scss/components/tables";
 @import "../../node_modules/@vanilla/theme-core/scss/components/userContent";
 
+@import 'components/index';
+
 /* -------------------------------------------------------------- *\
     Sections
 \* -------------------------------------------------------------- */
@@ -77,6 +79,8 @@ $staticVariables : true;
 @import "../../node_modules/@vanilla/theme-core/scss/sections/header";
 @import "../../node_modules/@vanilla/theme-core/scss/sections/navigation";
 @import "../../node_modules/@vanilla/theme-core/scss/sections/panel";
+
+@import 'sections/index';
 
 /* -------------------------------------------------------------- *\
     Pages

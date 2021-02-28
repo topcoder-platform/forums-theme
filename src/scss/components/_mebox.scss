@@ -1,0 +1,211 @@
+.SpAlert::after {
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  top: -1px;
+  right: 3px;
+  background-color: #EF476F;
+  border-radius: 6px;
+  display: block;
+  content: "";
+}
+
+.SpInbox::before {
+  font-size: 20px;
+}
+
+.SpBookmarks::before {
+  font-size: 20px;
+}
+.Header .ToggleFlyout.Open .MeButton.FlyoutButton.MeButton-user.TopcoderMeButton, .Header .ToggleFlyout.Open .MeButton.FlyoutButton.MeButton-notifications{
+  background-color: $global-color_grey_medium;
+  &:focus,
+  &:hover,
+  &:active {
+    background-color: transparent;
+  }
+}
+
+.Header .ToggleFlyout.Open .MeButton.FlyoutButton.MeButton-notifications {
+  border-radius: 16px ;
+}
+
+.Header .ToggleFlyout .MeButton.FlyoutButton.MeButton-user.TopcoderMeButton, .Header .ToggleFlyout .MeButton.FlyoutButton.MeButton-notifications {
+  &:focus,
+  &:hover {
+    background-color: $global-color_grey_medium;
+  }
+}
+
+.MeBox-header .MeMenu .ToggleFlyout+.ToggleFlyout {
+  margin-left: 33px;
+}
+
+.MeBox {
+  min-height: initial;
+  display: flex;
+  font-family: $global-body_fontFamily;
+
+  .MeButton{
+    height: 30px;
+    width: 30px;
+
+    .Alert {
+      right: -7px;
+      top: -8px;
+      line-height: 16px;
+      min-width: 16px;
+      height: 16px;
+    }
+
+  }
+
+  .MeButton-notifications {
+    &:focus,
+    &:active,
+    &:hover {
+      border-radius: 16px;
+    }
+  }
+
+  .MeButton.TopcoderMeButton {
+    width: fit-content;
+    height: 30px;
+    line-height: 30px;
+    border: 0px;
+    border-radius: 15px;
+
+    .icon-chevron-up, .icon-chevron-down {
+      font-weight: normal;
+      font-size: 10px;
+      margin: 0 5px;
+    }
+
+    .ProfilePhoto {
+      height: 30px;
+      width: 30px;
+    }
+    .Username {
+      line-height: 30px;
+      vertical-align: middle;
+      margin: 0px 10px 0px 5px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+  }
+
+  .MenuItems a, .MenuItems a:link, .MenuItems li>a {
+    padding: 0px 20px;
+    margin: -5px 0;
+    height: 50px;
+    line-height: 30px;
+
+    &.link-profile-details {
+      margin-top: -3px;
+      height: 82px;
+    }
+
+  }
+
+  .MeButtonTopMItem{
+    padding-top: 6px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    background: $color-turquoise-tc-turquoise-dark-3;
+  }
+
+  .MeButtonBottomMItem{
+    padding-bottom: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+
+  .MeButtonProfileMItem {
+    height: 82px;
+    color: $global_color_white;
+    background: $color-turquoise-tc-turquoise-dark-3;
+      .handle {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: $global-bold_fontWeight;
+        color: $global-color_white;
+      }
+
+      .email {
+        font-size: $global-small_fontSize;
+        line-height: 14px;
+        margin-top: 4px;
+        font-weight: $global-bold_fontWeight;
+        color: $global-color_white;
+      }
+
+      .avatar {
+        border-radius: 100%;
+        margin-right: 10px;
+        width: 60px;
+        height: 60px;
+      }
+   }
+
+  .MeButtonSwitchToBusinessMItem {
+
+    background: #2A2A2B;
+    color: $global-color_white;
+    font-size: $global-medium_fontSize;
+    line-height: 30px;
+    height: 50px;
+    img.switch-icon {
+      margin: 0 10px 0 4px;
+    }
+    a.switch-to-business {
+      font-family: $global-body_fontFamily;
+      margin: 0;
+      span {
+        color: $global-color_white;
+        font-weight: $global-bold_fontWeight;
+      }
+    }
+
+  }
+
+  .MeButtonSettingsItem, .MeButtonHelpItem, .MeButtonSignOutItem {
+    background: $global-color_white;
+    a {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 400;
+      text-decoration: none;
+    }
+  }
+
+  .MeButtonSettingsItem {
+    padding-top: 15px;
+  }
+  .MeButtonSignOutItem {
+    padding-bottom: 19px;
+  }
+
+  .Flyout {
+    top: 40px;
+  }
+
+  .Flyout.MenuItems {
+    padding: 0px;
+    width: 288px;
+    box-shadow:  0 5px 35px 5px rgb(21 21 22 / 10%), 0 10px 14px 0 rgb(21 21 22 / 30%);
+    border: 0px;
+  }
+
+  .MenuItems,
+  .Flyout.Flyout li {
+    hr {
+      background: #E0E0E0;
+      height: 1px;
+      margin: 10px;
+      align-self: center;
+    }
+  }
+}
+
