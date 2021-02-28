@@ -50,4 +50,26 @@ $( document ).ready(function() {
   $( ".Second-Menu-Toggle-Button, .primary-item-more" ).click(function() {
     $(this).parent().toggleClass('open');
   });
+
+  $(document).on('OpenFlyout', function(sender, $toggleFlyout) {
+    if($("a#meButton").attr("aria-expanded")=="false") {
+        $("a#meButton").find(".icon").removeClass('icon-chevron-up');
+        $("a#meButton").find(".icon").addClass('icon-chevron-down');
+    } else {
+      $("a#meButton").find(".icon").addClass('icon-chevron-up');
+      $("a#meButton").find(".icon").removeClass('icon-chevron-down');
+    }
+  });
+
+  $(document).on('CloseFlyout', function(sender, $toggleFlyout) {
+    if($("a#meButton").attr("aria-expanded")=="false") {
+      $("a#meButton").find(".icon").removeClass('icon-chevron-up');
+      $("a#meButton").find(".icon").addClass('icon-chevron-down');
+    } else {
+      $("a#meButton").find(".icon").addClass('icon-chevron-up');
+      $("a#meButton").find(".icon").removeClass('icon-chevron-down');
+    }
+  });
+
+
 });

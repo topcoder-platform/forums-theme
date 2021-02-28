@@ -1,16 +1,67 @@
-.MeButton.FlyoutButton.MeButton-user.TopcoderMeButton {
-  width: fit-content;
-  .Username {
-    line-height: 28px;
-    vertical-align: middle;
-    margin: 0px 10px 0px 5px;
-    font-size: 14px;
+.MeBox {
+  .MeButton{
+    font-family: $global-body_fontFamily;
   }
 
-  .icon-chevron-down {
-    font-weight: normal;
-    font-size: 10px;
+  .MeButton.TopcoderMeButton {
+    width: fit-content;
+    height: 30px;
+    line-height: 30px;
+    border: 0px;
+    border-radius: 15px;
+
+    .icon-chevron-up, .icon-chevron-down {
+      font-weight: normal;
+      font-size: 10px;
+      margin: 0 5px;
+    }
+  }
+
+  .MeButtonProfileMItem {
+    .handle {
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: $global-bold_fontWeight;
+      font-family: $global-body_fontFamily;
+      color: $global-color_white;
+    }
+
+    .email {
+      font-size: $global-small_fontSize;
+      line-height: 14px;
+      margin-top: 4px;
+      font-weight: $global-bold_fontWeight;
+      font-family: $global-body_fontFamily;
+      color: $global-color_white;
+    }
+
+    .avatar {
+      border-radius: 100%;
+      margin-right: 10px;
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  .MeButtonSwitchToBusinessMItem {
+
+    background: #2A2A2B;
+    color: $global-color_white;
+    font-size: $global-medium_fontSize;
+    line-height: 30px;
+    height: 50px;
+    img.switch-icon {
+      margin: 0 10px 0 4px;
+    }
+    a.switch-to-business {
+      font-family: $global-body_fontFamily;
+      margin: 0;
+      span {
+        color: $global-color_white;
+        font-family: $global-body_fontFamily;
+        font-weight: $global-bold_fontWeight;
+      }
+    }
+
   }
 }
-
-
