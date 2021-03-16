@@ -5,6 +5,21 @@
 .flex-1 {
   flex: 1;
 }
+.flex {
+  display: flex;
+}
+
+.flex.middle {
+  -webkit-align-items: center;
+  align-items: center; }
+
+.flex.column {
+  flex-direction: column;
+}
+
+.flex.left {
+  align-items: flex-start;
+}
 
 .center-child {
   display: flex;
