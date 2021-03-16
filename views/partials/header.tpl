@@ -100,15 +100,22 @@
       <a class="Second-Menu-Link" href="https://www.topcoder.com/gigs" target=""><span>Gig Work</span></a>
     </div>
   </div>
-
+  {if $User.SignedIn}
   <div class="Header-Second-Menu Community-Menu hide hide-mobile">
     <div class="Second-Menu-Content">
       <a class="Second-Menu-Link" href="https://www.topcoder.com/my-dashboard"><span>Dashboard</span></a>
-      <a class="Second-Menu-Link" href="https://www.topcoder.com/members/{if $User.SignedIn}{$Profile.Name|escape:'html'}{/if}"><span>My Profile</span></a>
+      <a class="Second-Menu-Link" href="https://www.topcoder.com/members/{$User.Name|escape:'html'}"><span>My Profile</span></a>
       <a class="Second-Menu-Link" href="https://community.topcoder.com/PactsMemberServlet?module=PaymentHistory&full_list=false" target="_blank"><span>Payments</span></a>
     </div>
   </div>
-
+  {else}
+    <div class="Header-Second-Menu Community-Menu hide hide-mobile">
+      <div class="Second-Menu-Content">
+        <a class="Second-Menu-Link" href="https://www.topcoder.com/community/learn"><span>Overview</span></a>
+        <a class="Second-Menu-Link" href="https://www.topcoder.com/thrive/tracks?track=Topcoder"><span>How It Works</span></a>
+      </div>
+    </div>
+  {/if}
   <div class="Header-Primary-container-Mobile hide-desktop">
     <div class="Header-Primary-Mobile hide-desktop">
       <a class="flex-1 center-child" href="https://www.topcoder.com">BUSINESS</a>
