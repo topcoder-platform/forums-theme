@@ -4,12 +4,22 @@
   }
 }
 
+.MessageList.DataList.Comments {
+  .Item-Header.CommentHeader {
+    .DiscussionInfo  {
+      a.ParentComment {
+        color: $global-blue;
+      }
+    }
+  }
+}
+
 .MessageList {
   .ItemDiscussion , .ItemComment {
     .Item-Body {
-       .Controls {
+      .Controls {
          a {
-           color: $global-blue;
+          color: $global-blue;
          }
          .MiddleDot{
            margin: 0px 8px;
@@ -29,5 +39,6 @@
 
     }
   }
-
 }
+
+
