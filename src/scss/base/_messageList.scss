@@ -35,6 +35,12 @@
         padding-top: 0;
         min-height: 0;
 
+        .AuthorWrap {
+          max-width: 100%;
+          display: flex;
+          font-family: $global-body_fontFamily;
+          font-size: $global-medium_fontSize;
+        }
         .Username {
           color: $global-color_black_light;
           font-size: 14px;
@@ -42,14 +48,18 @@
           line-height: 16px;
         }
 
+
         .Meta.CommentMeta.CommentInfo {
           display: block;
         }
       }
 
+      .Message {
+        font-family: $link-body_fontFamily;
+      }
+
       .Message.userContent {
-        font-size: 16px;
-        font-weight: 400;
+        font-size: $global-medium_fontSize;
       }
 
       &.CategoryHeading {
@@ -110,6 +120,28 @@
     }
   }
 }
+
+.MessageList.Discussion {
+  .Item.ItemDiscussion {
+    .Item-BodyWrap {
+      .Item-Body {
+        .Message.userContent {
+          font-family: $global-body_fontFamily;
+          font-size: $global-large_fontSize;
+        }
+      }
+    }
+  }
+}
+
+.Message.userContent {
+  a {
+    color: $global-blue;
+    text-decoration: underline;
+  }
+}
+
+
 
 
 .ReactButton.Quote.js-quoteButton {
