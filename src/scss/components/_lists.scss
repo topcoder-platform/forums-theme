@@ -7,7 +7,7 @@
 .MessageList.DataList.Comments {
   .Item-Header.CommentHeader {
     .DiscussionInfo  {
-      a.ParentComment {
+      a.ParentCommentLink, a.DiscussionLink {
         color: $global-blue;
       }
     }
