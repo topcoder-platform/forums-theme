@@ -40,6 +40,16 @@
           display: flex;
           font-family: $global-body_fontFamily;
           font-size: $global-medium_fontSize;
+
+          .Author {
+            white-space: nowrap;
+          }
+          .DiscussionInfo {
+             text-align: right;
+             white-space: nowrap;
+             overflow: hidden;
+             text-overflow: ellipsis;
+          }
         }
         .Username {
           color: $global-color_black_light;

@@ -9,27 +9,26 @@
         padding-right: 56px;
         padding-left: 20px;
         font-family: $global-body_fontFamily;
+
+        &:focus,
+        &:active {
+            border-color: $global-color_grey_dark;
+        }
       }
 
       .InputBox.js-search {
-        border: 1px solid #aaa;
+        border: 1px solid $global-color_grey_dark;
       }
 
       input.Button:hover,
       input.Button {
         height: 38px !important;
         width: 56px !important;
-        background: $global-grey-bg !important;
-        border-radius: 30px !important;
+        background: $color-turquoise-tc-turquoise-dark-3 !important;
+        border-radius: 20px !important;
         margin: 1px;
       }
 
-      &::after {
-        color: white !important;
-        width: 56px !important;
-        font-size: 18px !important;
-        top: 1px !important;
-      }
     }
   }
 }
