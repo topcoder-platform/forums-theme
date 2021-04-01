@@ -1,0 +1,12 @@
+.SearchForm form > div::after,
+.SearchBox form > div::after {
+  content:  " ";
+  background-image:  url('/themes/topcoder/design/images/icon-search.svg');
+  background-size: cover;
+  position: absolute;
+  margin: 12px 20px;
+  color: $global-color_white !important;
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+}

@@ -3,3 +3,42 @@
     margin-left: #{$component-horizontal_padding};
   }
 }
+
+.MessageList.DataList.Comments {
+  .Item-Header.CommentHeader {
+    .DiscussionInfo  {
+      a.ParentCommentLink, a.DiscussionLink {
+        color: $global-blue;
+      }
+    }
+  }
+}
+
+.MessageList {
+  .ItemDiscussion , .ItemComment {
+    .Item-Body {
+      .Controls {
+         a {
+          color: $global-blue;
+         }
+         .MiddleDot{
+           margin: 0px 8px;
+           font-weight: bold;
+         }
+         .left {
+           text-align: left;
+         }
+         .center {
+           text-align: center;
+         }
+
+         .right {
+           text-align: right;
+         }
+       }
+
+    }
+  }
+}
+
+
