@@ -81,13 +81,12 @@
 @media screen and (max-width: 768px) {
   .DataList.Discussions {
     li.ItemDiscussion {
-      border-top: 1px solid $global-grey-bg;
-      background-color: transparent;
+      border-bottom: none;
+      border-top: none;
+      background-color: #f4f4f4;
+      margin-bottom: 16px;
+      padding: 18px 20px 0 25px!important;
       border-radius: 10px;
-      padding: 19px 0 18px 0;
-      border-radius: 0;
-      margin-top: 0;
-      position: relative;
 
       &:first-child {
         border-top: none;
@@ -100,7 +99,7 @@
       .Options {
         position: absolute;
         top: 20px;
-        right: 0;
+        right: 5px;
       }
 
       .Meta.Meta-Discussion {
@@ -119,31 +118,22 @@
 
         &.status-container {
           .MCount,
-          .Tag {
+          .Tag, .MiddleDot {
             display: none;
           }
 
           .MItem.Category {
-            position: relative;
+            display: none;
 
             &::before {
-              content: "";
-              width: 3px;
-              height: 3px;
-              border-radius: 50%;
-              background: $global-color_grey;
-              position: absolute;
-              display: block;
-              left: -7px;
-              margin-top: -2px;
-              top: 50%;
+              content: none;
             }
           }
 
         }
 
         &.view-comment-container {
-          .MItem:not(.MCount),
+          .MItem:not(.MCount,.MiddleDot),
           .Tag {
             display: none;
           }
@@ -152,16 +142,7 @@
             position: relative;
 
             &::after {
-              content: "";
-              width: 3px;
-              height: 3px;
-              border-radius: 50%;
-              background: $global-color_grey;
-              position: absolute;
-              display: block;
-              right: -8px;
-              margin-top: -2px;
-              top: 50%;
+              content: none;
             }
 
             &.CommentCount {
