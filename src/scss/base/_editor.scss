@@ -18,23 +18,54 @@
     border-right: 1px solid #aaa;
   }
 
-  .editor-statusbar {
+  .editor-statusbar, {
       font-size: 13px;
       padding: 8px 0px;
       display: flex;
       overflow: hidden;
 
       span {
-        min-width:4em;
-        margin-left: 20px;
+        margin-left: 0px;
+        min-width: 0px;
       }
-     .upload-image {
-       margin-left: 0px;
+     .message, .upload-image {
+        margin-left: 0px;
         margin-right: auto;
      }
 
+    .message {
+      display: none;
+    }
     .autosave {
 
     }
   }
+}
+
+.EasyMDEContainer.error{
+  .message {
+    margin-left: 0px;
+    color: #EF476F;
+    text-align: left;
+    display: inline;
+   }
+  .upload-image {
+    display: none;
+  }
+  .CodeMirror {
+    border-right: 2px solid #EF476F;
+    border-left: 2px solid #EF476F;
+    border-bottom: 2px solid #EF476F;
+  }
+
+  .editor-toolbar {
+    border-top: 2px solid #EF476F;
+    border-left: 2px solid #EF476F;
+    border-right: 2px solid #EF476F;
+  }
+}
+.DiscussionForm {
+   .countOfRemainingChars {
+     display: none;
+   }
 }

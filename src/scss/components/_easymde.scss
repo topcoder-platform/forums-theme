@@ -11,23 +11,12 @@
     justify-content: flex-end;
     flex-wrap: wrap;
 
-    span {
-    }
-    .upload-image {
+    .message, .upload-image {
       text-align: left;
       order: 0;
     }
-    .autosave {
+    .countOfRemainingChars {
       order: 1;
-    }
-    .lines {
-      order: 2;
-    }
-    .words {
-      order: 3;
-    }
-    .cursor {
-      order: 4;
     }
   }
 }
