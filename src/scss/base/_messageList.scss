@@ -17,6 +17,7 @@
   .DataList.DataList-Search,
   .DataList.CategoryList,
   .DataList.GroupList,
+  .DataList.CategoryAccordion,
   .MessageList.DataList.Comments {
     li.Item {
       border-bottom: none;
@@ -98,6 +99,74 @@
       padding: 18px 20px 1px 25px !important;
     }
   }
+
+
+
+ .CategoryAccordion {
+   .CategoryAccordionItem {
+     margin-bottom: 20px;
+   }
+
+   .ui-accordion-header-icon {
+     float: right;
+     top: 12px;
+     background: no-repeat;
+     margin-right: 25px;
+   }
+
+   .icon-chevron-down:before, .icon-chevron-up:before {
+     content: " ";
+     background-size: cover;
+     background-image: url("/themes/topcoder/design/images/icon-chevron-down.svg");
+     position: absolute;
+     margin-top: 12px;
+     color: #fff!important;
+     height: 12px;
+     width: 20px;
+     display: inline-block;
+   }
+
+   .icon-chevron-down:before{
+
+   }
+   .icon-chevron-up:before {
+     transform: rotate(-180deg);
+   }
+
+   .CategoryAccordionHeader {
+       border-radius: 10px;
+       padding: 15px 20px 15px 26px !important;
+       background-color: $global-grey-very-dark-bg;
+
+       &.ui-state-active {
+           border-radius: 10px 10px 0px 0px;
+       }
+
+      a {
+       @include barlowcondensed-medium;
+       text-transform: uppercase;
+       color: $global-color_black_light !important;
+       font-size: $global-mediumTitle_fontSize !important;
+     }
+   }
+
+   .DataList.CategoryList {
+     li.Item {
+       border-radius: 0px ;
+       padding: 20px 20px 19px 26px!important;
+       margin: 0px;
+
+       &.Depth2 {
+         border-right: solid 1px #E9E9E9;
+         border-left: solid 1px #E9E9E9;
+         border-bottom: solid 1px #E9E9E9;
+         background: transparent;
+       }
+     }
+
+   }
+
+ }
 
   .DataList.CategoryList, .DataList.GroupList {
     li.Item {
@@ -195,7 +264,7 @@
   .Content.MainContent,
   .CommentsWrap {
     .DataList.DataList-Search,
-    .DataList.CategoryList,
+    .DataList.CategoryList, .DataList.CategoryAccordion
     .MessageList.DataList.Comments {
       li.Item {
         .PhotoWrap {
