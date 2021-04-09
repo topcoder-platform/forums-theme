@@ -21,16 +21,7 @@
             position: relative;
 
             &::after {
-              content: '';
-              width: 3px;
-              height: 3px;
-              border-radius: 50%;
-              background: $global-color_grey;
-              position: absolute;
-              display: block;
-              right: -8px;
-              margin-top: -2px;
-              top: 50%;
+              content: none
             }
           }
         }

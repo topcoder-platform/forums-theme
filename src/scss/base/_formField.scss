@@ -68,6 +68,17 @@ form {
       margin-left: 7px !important;
       height: 21px;
     }
+
+    .Button.Primary[disabled=disabled], .Button:disabled {
+      background-color: $global-color_grey_dark;
+      border: 1px solid $global-color_grey_dark;
+    }
+
+    a.Button.Disabled, a.Button.Disabled:hover,a.Button.Disabled:focus {
+      border: 1px solid $global-color_grey_dark;
+      color: $global-color_grey_dark;
+
+    }
   }
 
   li,

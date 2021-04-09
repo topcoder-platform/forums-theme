@@ -1,0 +1,9 @@
+#plugins\/groups_groups_mine, #vanilla_drafts_index, #plugins\/topcoder_watching_index {
+  .BreadcrumbsBox {
+    display: none;
+  }
+}
+
+#vanilla_categories_index .BreadcrumbsBox .HomeCrumb.Last {
+  display: none;
+}
