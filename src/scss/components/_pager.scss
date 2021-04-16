@@ -1,0 +1,13 @@
+.PageControls.PageControls {
+  .BoxNewDiscussion {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .PageControls.PageControls {
+    .BoxNewDiscussion {
+      display: none;
+    }
+  }
+}

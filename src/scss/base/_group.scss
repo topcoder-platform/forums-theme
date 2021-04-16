@@ -6,26 +6,57 @@
   }
 }
 .Group {
-  font-family: $global-body_fontFamily !important;
-  .Group-Description {
-      color: $global-color_black_light;
-      font-size: $global-large_fontSize;
-      margin-bottom: 33px;
-     a {
-       color: $global-blue;
-     }
-     > br {
-       line-height: 0px;
-       display: inline-block;
-       content: '';
+   font-family: $global-body_fontFamily !important;
+
+  .Group-Archived{
+    margin-top: 6px;
+    .Archived {
+      background: $global-pink;
+      border: 1px solid $global-pink;
+      color: white;
+      font-family: $global-body_fontFamily !important;
+      font-size: $global-small_fontSize !important;
+      font-weight: bold !important;
+      letter-spacing: 0.69px !important;
+      height: 30px;
+      text-transform: uppercase;
+      border-radius: 15px !important;
+      padding: 6px 17px !important;
+      margin-right: 10px ;
     }
   }
 
-  .Group-Header {
+  .Group-Description {
+
+   }
+
+  .Group-Header.NoBanner {
     .Group-Info {
       padding-left: 0px;
+      color: $global-color_black_light;
+      margin-bottom: 33px;
 
-      .Table {
+      .Group-Description {
+        margin-bottom: 0px;
+      }
+      .Group-Archived, .Group-Description {
+        * {
+          font-size: $global-large_fontSize;
+        }
+        a {
+          color: $global-blue;
+        }
+      }
+    }
+  }
+
+  .Group-Footer {
+    .Group-Info {
+      padding-left: 0px;
+      color: $global-color_black_light;
+      margin-bottom: 33px;
+
+     .Table {
         width:  calc(100% + 46px);
         display: table;
         border-collapse: separate;
@@ -59,7 +90,6 @@
             border-bottom: 1px solid #D4D4D4;
           }
         }
-
       }
     }
   }
@@ -67,7 +97,13 @@
 
 @media screen and (max-width: 768px) {
   .Group {
-    .Group-Header {
+    .Group-Archived{
+      span:not(.Archived) {
+        display: block;
+        padding-top:10px;
+      }
+    }
+    .Group-Footer {
       .Group-Info {
         padding-left: 0px;
         .Table {
