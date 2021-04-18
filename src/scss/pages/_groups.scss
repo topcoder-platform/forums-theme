@@ -16,12 +16,6 @@
   text-align: left;
 }
 
-@media screen and (max-width: 768px) {
-  .Section-GroupList .DataList .Item .Options {
-    margin-top: 0px;
-  }
-}
-
 .Group-MembersPreview {
   .PhotoWrap.PhotoWrap.PhotoWrap img {
     margin: 0;
@@ -41,5 +35,50 @@
 Group-Header.HasBanner {
   .Group-Header-Info {
     margin: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Section-GroupList .DataList .Item .Options {
+    margin-top: 0px;
+  }
+
+  .DataList.GroupList {
+    li.Item {
+
+      .Meta.Meta-Group {
+
+        &.status-container {
+          .MCount,
+          .Tag, .MiddleDot {
+            display: none;
+          }
+        }
+
+        &.view-comment-container {
+           margin-top: 0px;
+           float: right;
+
+          .MItem:not(.MCount,.MiddleDot),
+          .Tag {
+            display: none;
+          }
+
+          .MCount {
+            position: relative;
+
+            &::after {
+              content: none;
+            }
+
+            &.CommentCount {
+              &::after {
+                content: none;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }

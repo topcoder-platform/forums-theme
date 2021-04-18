@@ -100,8 +100,6 @@
     }
   }
 
-
-
  .CategoryAccordion {
    .CategoryAccordionItem {
      margin-bottom: 20px;
@@ -188,17 +186,28 @@
       }
     }
   }
-}
+  .DataList.GroupList {
+    li.Item {
+      .Title {
+        margin-bottom: 0px;
+      }
 
-.DataList.GroupList {
-  li.Item {
-    .Description {
-      font-family: $global-body_fontFamily;
-      color: $global-color_grey;
-      font-size: 13px;
+      .Description {
+        color: $global-color_grey;
+      }
+
+      .Description, .Description a {
+        font-family: $global-body_fontFamily;
+        font-size: 13px;
+      }
+
+      .GroupLastDiscussionComment {
+         margin-top: 18px;
+      }
     }
   }
 }
+
 
 .MessageList.Discussion {
   .Item.ItemDiscussion {
