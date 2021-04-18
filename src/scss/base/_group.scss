@@ -6,33 +6,83 @@
   }
 }
 .Group {
-  font-family: $global-body_fontFamily !important;
-  .Group-Description {
-      white-space: pre-line;
-      color: $global-color_black_light;
-      font-size: $global-large_fontSize;
-      margin-bottom: 27px;
+   font-family: $global-body_fontFamily !important;
+
+  .Group-Archived{
+    margin-top: 6px;
+    .Archived {
+      background: $global-pink;
+      border: 1px solid $global-pink;
+      color: white;
+      font-family: $global-body_fontFamily !important;
+      font-size: $global-small_fontSize !important;
+      font-weight: bold !important;
+      letter-spacing: 0.69px !important;
+      height: 30px;
+      text-transform: uppercase;
+      border-radius: 15px !important;
+      padding: 6px 17px !important;
+      margin-right: 10px ;
     }
-  .Group-Header {
+  }
+
+  .Group-Description {
+
+   }
+
+  .Group-Header.NoBanner {
     .Group-Info {
       padding-left: 0px;
+      color: $global-color_black_light;
+      margin-bottom: 33px;
 
-      .Table {
-        width:  100%;
+      .Group-Description {
+        margin-bottom: 0px;
+      }
+      .Group-Archived, .Group-Description {
+        * {
+          font-size: $global-large_fontSize;
+        }
+        a {
+          color: $global-blue;
+        }
+      }
+    }
+  }
+
+  .Group-Footer {
+    .Group-Info {
+      padding-left: 0px;
+      color: $global-color_black_light;
+      margin-bottom: 33px;
+
+     .Table {
+        width:  calc(100% + 46px);
+        display: table;
+        border-collapse: separate;
+        border-spacing: 23px 0px;
+        margin-left: -23px;
+        margin-right: -23px;
+
         .TableRow {
+          border: none;
           .TableCell {
+            width: 50%;
             padding: 10px;
-            border-top: 1px solid #D4D4D4;
             color: $global-color_black_light;
             font-size: $global-medium_fontSize;
-          }
-          .Cell1 {
-            width: 10%;
-          }
-
-          .Cell2 {
-            color: $global-color_grey;
-            width: 90%;
+            display:table-cell;
+            background-clip: padding-box;
+            border-top: 1px solid #D4D4D4;
+            .MLabel {
+              min-width: 90px;
+              white-space: nowrap;
+              display: inline-block;
+            }
+            .MValue {
+              color: $global-color_grey;
+              font-weight: $global-medium_fontWeight;
+            }
           }
         }
         .TableRow.Last {
@@ -40,7 +90,55 @@
             border-bottom: 1px solid #D4D4D4;
           }
         }
+      }
+    }
+  }
+}
 
+@media screen and (max-width: 768px) {
+  .Group {
+    .Group-Archived{
+      span:not(.Archived) {
+        display: block;
+        padding-top:10px;
+      }
+    }
+    .Group-Footer {
+      .Group-Info {
+        padding-left: 0px;
+        .Table {
+          width:  100%;
+          margin: 0px;
+          border-spacing:0px;
+
+          .TableRow {
+            border: none;
+            .TableCell {
+              width: 100%;
+              display:block;
+              background-clip: padding-box;
+              border-top: 1px solid #D4D4D4;
+              .MLabel {
+                min-width: 90px;
+                white-space: nowrap;
+                display: inline-block;
+              }
+              .MValue {
+                color: $global-color_grey;
+                font-weight: $global-medium_fontWeight;
+              }
+            }
+          }
+          .TableRow.Last {
+            .TableCell {
+              border-bottom: none;
+              &:last-child {
+                border-bottom: 1px solid #D4D4D4;
+              }
+            }
+          }
+
+        }
       }
     }
   }

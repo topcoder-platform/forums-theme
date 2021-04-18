@@ -1,29 +1,83 @@
 div.Popup {
+  .Border {
+    min-width: 440px;
+    width: 440px;
+    padding: 0px;
+  }
   .Body {
-    a {
-      color: $global-blue;
-      &:focus,
-      &:hover {
+      border-radius: 10px;
+      padding: 33px 18px 36px 18px;
+      box-shadow: 0 2px 9px 0 rgba(21, 21, 22, 0.15);
+  }
+  .Content {
+    > h1:first-child, h2:first-child, h3:first-child {
+      @include barlowcondensed-medium;
+      color: $global-color_turquoise !important;
+      font-size: $global-popup_title_fontSize;
+      font-weight: bold !important;
+      line-height: 34px !important;
+      text-align: center;
+      margin-bottom: 25px;
+      text-transform: uppercase;
+    }
+    .P.Message {
+      $font-family: $global-body_fontFamily !important;
+      font-size: $global-large_fontSize !important;
+      color: $global-color_black_light !important;
+      text-align: center;
+      margin: 0px;
+    }
+    .Body {
+      a {
         color: $global-blue;
-        text-decoration: $theme-link-hover_textDecoration;
+
+        &:focus,
+        &:hover {
+          color: $global-blue;
+          text-decoration: $theme-link-hover_textDecoration;
+        }
       }
-    }
-    .Buttons .Close {
-      &:focus,
-      &:hover {
-        color: $global-color_white;
+
+      .Buttons .Close {
+        &:focus,
+        &:hover {
+          color: $global-color_white;
+        }
       }
     }
   }
 
+  .Footer {
+    .Close {
+      @if ($staticVariables) {
+        @include CloseButton($popup_fg);
+      }
 
-  a.Close {
-    top: 24px;
-    right: 28px;
-    @if ($staticVariables) {
-      @include CloseButton($popup_fg);
+      display: none;
+      top: 24px;
+      right: 28px;
     }
   }
+
+  .Buttons-Confirm {
+    margin-top: 26px;
+    #Form_OK, .Button.Primary {
+      background: $global-color_primary;
+      border: 1px solid $global-color_primary;
+      color: $global-color_white;
+    }
+    .Close {
+      border: 1px solid $global-color_primary;
+      color: $global-color_primary;
+    }
+    .Button.Primary.Delete{
+      background: $global-pink;
+      padding: 0px 22px !important;
+      border: 1px solid  $global-pink;
+      color: #FAFAFB;
+    }
+  }
+
 }
 .InformWrapper {
   margin: 0px;
@@ -64,6 +118,10 @@ div.Popup {
       background-image: url("/themes/topcoder/design/images/icon-close-2.svg");
     }
   }
+}
+
+.Overlay {
+  background: rgba($global-color_black_light, 0.9);
 }
 
 @media (max-width: 500px) {

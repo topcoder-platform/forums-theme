@@ -70,6 +70,18 @@
   }
 }
 
+.Box.BoxCategories {
+  h4 {
+    @include barlowcondensed-medium;
+    color: $global-color_black !important;
+    font-size: 24px !important;
+    font-weight: 500 !important;
+    text-transform: uppercase !important;
+
+    padding-left: 22px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .Panel-main .Box.BoxCategories,
   .Box.BoxCategories,
