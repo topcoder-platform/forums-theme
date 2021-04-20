@@ -30,6 +30,19 @@
   height: 40px;
 }
 
+.watchButton{
+  vertical-align: top;
+}
+h1 .watchButton {
+   padding: 5px 10px;
+   display: inline-block;
+   line-height: 22px !important;
+
+   &.isWatching {
+     padding: 1px 10px;
+     line-height: 21px !important;
+   }
+}
 
 .ReactButton.Quote {
   vertical-align: inherit;
