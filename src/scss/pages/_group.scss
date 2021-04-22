@@ -1,6 +1,7 @@
 .Section-Group .H {
   text-align: left;
   width: auto;
+  float: left;
   display: inline-block;
 }
 body.Group {
@@ -63,5 +64,6 @@ body.Group {
   .Section-Group .H {
     text-align: left;
     display: block;
+    float: none;
   }
 }
