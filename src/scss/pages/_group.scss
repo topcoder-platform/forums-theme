@@ -1,28 +1,7 @@
-@media screen and (max-width: 768px) {
-  .Frame-body {
-    .Frame-content {
-      .Frame-contentWrap {
-        .Frame-details {
-          .Frame-row {
-            .Content.MainContent {
-              width: 100%;
-              overflow: hidden;
-
-              h1.H,
-              h1.HomepageTitle,
-              h1 {
-                margin-top: 0px;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
 .Section-Group .H {
   text-align: left;
+  width: auto;
+  display: inline-block;
 }
 body.Group {
   .FormWrapper {
@@ -56,5 +35,33 @@ body.Group {
   .Group-Info {
     margin: 20px 0px 30px 0px;
     padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Frame-body {
+    .Frame-content {
+      .Frame-contentWrap {
+        .Frame-details {
+          .Frame-row {
+            .Content.MainContent {
+              width: 100%;
+              overflow: hidden;
+
+              h1.H,
+              h1.HomepageTitle,
+              h1 {
+                margin-top: 0px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .Section-Group .H {
+    text-align: left;
+    display: block;
   }
 }
