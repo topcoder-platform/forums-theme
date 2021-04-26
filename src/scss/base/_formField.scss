@@ -55,7 +55,6 @@ form {
     .Button.PreviewButton {
       border-color: $global-color_primary;
       color: $global-color_primary;
-
     }
 
     .Button.DraftButton {
@@ -74,10 +73,11 @@ form {
       border: 1px solid $global-color_grey_dark;
     }
 
-    a.Button.Disabled, a.Button.Disabled:hover,a.Button.Disabled:focus {
+    a.Button.Disabled, a.Button.Disabled:hover,a.Button.Disabled:focus,
+    .Button.PreviewButton[disabled=disabled]{
       border: 1px solid $global-color_grey_dark;
       color: $global-color_grey_dark;
-
+      background-color: transparent;
     }
   }
 

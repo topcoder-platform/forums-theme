@@ -222,6 +222,30 @@
   }
 }
 
+.Item.ItemDiscussion, .Item.ItemComment  {
+  .Item-Header {
+    @media screen and (min-width: 768px) {
+      .MItem.AuthorProfileStats {
+        padding-right: 0px;
+        margin-right: 0px;
+      }
+
+      .MItem.DateCreated {
+
+        padding-left: 0px;
+        margin-left: 0px;
+
+        &::before {
+          content: '  |  ';
+          font-family: $global-body_fontFamily;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+
 .Message.userContent {
   a {
     color: $global-blue;
