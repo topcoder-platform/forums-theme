@@ -5,7 +5,6 @@
 .Button:not(.GroupOptionsTitle), .Buttons .btn-primary,
 .BoxButtons.BoxNewDiscussion .Button.Primary,
 .PageControls .Button-Controls .Button.Primary,
-
 .FormTitleWrapper .Buttons .Button, .FormWrapper .Buttons .Button,
 .FormTitleWrapper .Buttons .Button.Primary, .FormWrapper .Buttons .Button.Primary,
 body.Post .FormTitleWrapper .Buttons .Button.Primary, body.Post .FormWrapper .Buttons .Button.Primary,
@@ -13,8 +12,9 @@ body.Post .FormTitleWrapper .Buttons .Button, body.Post .FormWrapper .Buttons .B
 form .Buttons .Button, form .Buttons .Button.Cancel,
 form .Buttons .Button.PreviewButton,
 form .Buttons .Button.WriteButton,
-form .Buttons .Button.Primary.CommentButton
-
+form .Buttons .Button.Primary.CommentButton,
+.Button.CancelReplyComment,
+.FormTitleWrapper .Buttons .Button.CancelReplyComment, .FormWrapper .Buttons .Button.CancelReplyComment
 {
   font-size: $global-small_fontSize !important;
   font-weight: $global-medium_fontWeight !important;
