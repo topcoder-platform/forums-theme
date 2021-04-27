@@ -47,7 +47,7 @@ form {
   }
 
   .Buttons {
-    .Button.Cancel, .Button.WriteButton {
+    .Button.Cancel, .Button.WriteButton, .Button.CancelReplyComment {
       border-color: $global-color_primary;
       color: $global-color_primary;
     }
