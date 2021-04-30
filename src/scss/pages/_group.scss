@@ -1,3 +1,47 @@
+.Section-Group .H {
+  text-align: left;
+  width: auto;
+  float: left;
+  display: inline-block;
+}
+body.Group {
+  .FormWrapper {
+    .Buttons {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+  }
+}
+// Over selected on core...
+.Group-Header.Group-Header.Group-Header.NoBanner {
+  margin-bottom: 0px;
+}
+
+.Group-Header.NoBanner {
+  min-height: 1px;
+  display: flex;
+  .GroupOptions {
+    float: right;
+  }
+  .Group-Info {
+    margin: 0px;
+    padding-left: 0;
+  }
+}
+
+.Group-Header.HasBanner {
+  min-height: 1px;
+  display: flex;
+  .GroupOptions {
+    top: 0px;
+  }
+  .Group-Info {
+    margin: 20px 0px 30px 0px;
+    padding-left: 0;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .Frame-body {
     .Frame-content {
@@ -19,42 +63,10 @@
       }
     }
   }
-}
 
-.Section-Group .H {
-  text-align: left;
-}
-body.Group {
-  .FormWrapper {
-    .Buttons {
-      display: flex;
-      flex-direction: row-reverse;
-    }
-
-  }
-}
-// Over selected on core...
-.Group-Header.Group-Header.Group-Header.NoBanner {
-  margin-bottom: 0px;
-}
-
-.Group-Header.NoBanner {
-  min-height: 1px;
-  display: flex;
-  .Group-Info {
-    margin: 0px;
-    padding-left: 0;
-  }
-}
-
-.Group-Header.HasBanner {
-  min-height: 1px;
-  display: flex;
-  .GroupOptions {
-    top: 0px;
-  }
-  .Group-Info {
-    margin: 20px 0px 30px 0px;
-    padding-left: 0;
+  .Section-Group .H {
+    text-align: left;
+    display: block;
+    float: none;
   }
 }

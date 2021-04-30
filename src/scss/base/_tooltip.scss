@@ -1,0 +1,80 @@
+.tooltip {
+  position: relative;
+  font-size: $global-medium_fontSize;
+  font-family: $global-body_fontFamily;
+  font-weight: normal;
+
+  &:hover .tooltiptext {
+    visibility: visible;
+  }
+  .tooltiptext {
+    visibility: hidden;
+    line-height:16px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    background-color: $global-color_grey;
+    color: $global-color_white;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: 5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: $global-color_grey transparent transparent transparent;
+    }
+  }
+}
+
+.tooltip .tooltiptext{
+  width: 109px;
+  padding-right: 14px;
+  padding-left:13px;
+  margin-left: -64px;
+  margin-bottom: 3px;
+  text-transform: none;
+
+  @media screen and (max-width: 992px) {
+    margin-left: -69px;
+    &::after {
+      margin-left: 9px;
+    }
+  }
+
+}
+.isWatching.tooltip .tooltiptext{
+  width: 155px;
+  padding-left: 13px;
+  padding-right: 9px;
+  margin-left: -110px;
+  margin-bottom: 6px;
+  &::after {
+    margin-left: 27px;
+  }
+
+  @media screen and (max-width: 992px) {
+    margin-left: -115px;
+    &::after {
+      margin-left: 32px;
+    }
+  }
+}
+
+.GroupOptions.OptionsMenu.ButtonGroup {
+  .tooltip {
+    padding-top: 10px;
+  }
+}
+.GroupOptions.OptionsMenu.ButtonGroup {
+  .isWatching.tooltip {
+    padding-top: 3px;
+    padding-left: 8px;
+  }
+}

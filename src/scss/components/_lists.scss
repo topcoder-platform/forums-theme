@@ -20,8 +20,14 @@
       .Controls {
          a {
           color: $global-blue;
+
+           &.ReplyViewOptionLink.Active,  {
+             color: $global-color_grey !important;
+             font-weight:500;
+           }
          }
-         .MiddleDot{
+
+        .MiddleDot{
            margin: 0px 8px;
            font-weight: bold;
          }
@@ -40,5 +46,6 @@
     }
   }
 }
+
 
 

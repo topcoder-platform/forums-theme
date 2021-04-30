@@ -5,17 +5,28 @@
 .Button:not(.GroupOptionsTitle), .Buttons .btn-primary,
 .BoxButtons.BoxNewDiscussion .Button.Primary,
 .PageControls .Button-Controls .Button.Primary,
-.Form-BodyWrap .FormTitleWrapper .Buttons .Button.Primary,
-.Form-BodyWrap .FormWrapper .Buttons .Button.Primary
+.FormTitleWrapper .Buttons .Button, .FormWrapper .Buttons .Button,
+.FormTitleWrapper .Buttons .Button.Primary, .FormWrapper .Buttons .Button.Primary,
+body.Post .FormTitleWrapper .Buttons .Button.Primary, body.Post .FormWrapper .Buttons .Button.Primary,
+body.Post .FormTitleWrapper .Buttons .Button, body.Post .FormWrapper .Buttons .Button,
+form .Buttons .Button, form .Buttons .Button.Cancel,
+form .Buttons .Button.PreviewButton,
+form .Buttons .Button.WriteButton,
+form .Buttons .Button.Primary.CommentButton,
+.Button.CancelReplyComment,
+.FormTitleWrapper .Buttons .Button.CancelReplyComment, .FormWrapper .Buttons .Button.CancelReplyComment
 {
   font-size: $global-small_fontSize !important;
   font-weight: $global-medium_fontWeight !important;
   letter-spacing: 0.69px !important;
   height: 30px;
-  line-height: 34px;
+  min-height: 30px;
+  line-height: 30px;
   text-transform: uppercase;
   border-radius: 20px !important;
   padding: 0 20px !important;
+  min-width: 100px;
+  text-align: center;
 }
 .Button.Primary.Delete, .Buttons .Close {
   letter-spacing: 0.8px !important;
@@ -30,6 +41,19 @@
   height: 40px;
 }
 
+.watchButton{
+  vertical-align: top;
+}
+h1 .watchButton {
+   padding: 5px 10px;
+   display: inline-block;
+   line-height: 22px !important;
+
+   &.isWatching {
+     padding: 1px 10px;
+     line-height: 21px !important;
+   }
+}
 
 .ReactButton.Quote {
   vertical-align: inherit;

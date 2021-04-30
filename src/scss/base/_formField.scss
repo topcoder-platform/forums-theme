@@ -47,7 +47,7 @@ form {
   }
 
   .Buttons {
-    .Button.Cancel {
+    .Button.Cancel, .Button.WriteButton, .Button.CancelReplyComment {
       border-color: $global-color_primary;
       color: $global-color_primary;
     }
@@ -55,7 +55,6 @@ form {
     .Button.PreviewButton {
       border-color: $global-color_primary;
       color: $global-color_primary;
-
     }
 
     .Button.DraftButton {
@@ -74,10 +73,11 @@ form {
       border: 1px solid $global-color_grey_dark;
     }
 
-    a.Button.Disabled, a.Button.Disabled:hover,a.Button.Disabled:focus {
+    a.Button.Disabled, a.Button.Disabled:hover,a.Button.Disabled:focus,
+    .Button.PreviewButton[disabled=disabled]{
       border: 1px solid $global-color_grey_dark;
       color: $global-color_grey_dark;
-
+      background-color: transparent;
     }
   }
 
@@ -157,6 +157,43 @@ form {
   }
 }
 
+.CommentFormWrap {
+  .Preview {
+     padding: 0px;
+
+    .Message {
+       background-color: $global-grey-medium-bg;
+       border-radius: 10px;
+       padding: 16px 24px 10px 33px!important;
+       font-family: $link-body_fontFamily;
+       font-size: $global-large_fontSize;
+    }
+  }
+}
+
+.DiscussionForm {
+  .Preview {
+    padding: 0px;
+    background-color: $global-grey-medium-bg;
+    border-radius: 10px;
+    padding: 16px 24px 10px 33px!important;
+    font-family: $link-body_fontFamily;
+    font-size: $global-large_fontSize;
+    .Title {
+      display: block;
+      margin-bottom: 14px;
+      color: #2a2a2a;
+      font-weight: 700;
+      line-height: 30px;
+    }
+    .Message {
+      a {
+        color: $global-blue;
+        text-decoration: underline;
+      }
+    }
+  }
+}
 
 .selectBox-label {
   margin-right: 10px;
