@@ -246,8 +246,8 @@
 }
 
 
-.Message.userContent {
-  a {
+.Message.userContent, .CommentFormWrap .Preview {
+   a, a:hover, a:focus {
     color: $global-blue;
     text-decoration: underline;
   }
