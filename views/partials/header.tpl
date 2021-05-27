@@ -18,7 +18,7 @@
         </span>
         <nav class="Header-desktopNav hide-mobile">
           <a class="Topcoder-logo" href="{home_link format=" %url"}">
-            <img src="/themes/topcoder/design/images/topcoder-logo.svg" />
+            {logo}
           </a>
           <span class="Header-separator"></span>
           <a class="Header-primary-item" href="https://www.topcoder.com">BUSINESS</a>
