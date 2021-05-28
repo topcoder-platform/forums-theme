@@ -24,5 +24,40 @@
       margin-top: 24px;
     }
   }
+  .SignUpBlock {
+    margin-top: 25px;
 
+    .SpArrowRight {
+      display: unset !important;
+      &::before {
+        content: '';
+        background-image: url('/themes/topcoder/design/images/arrow-right.svg');
+        background-size: cover;
+        margin: 2px 0px 2px 7px;
+        height: 14px;
+        line-height: 18px;
+        width: 16px;
+        position: absolute;
+      }
+    }
+
+    .Button.SignUp {
+      color: #137D60;
+      line-height: 18px;
+      border: 0px;
+      padding: 0px 3px !important;
+      font-size: 15px !important;
+      font-family: Roboto;
+      color: #137D60 !important;
+
+      a {
+        letter-spacing: 1px;
+        line-height: 18px;
+
+        &:focus, &:visited, &:hover {
+          color: #137D60 !important;
+        }
+      }
+   }
+  }
 }

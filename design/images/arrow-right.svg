@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="14px" viewBox="0 0 16 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ECE1941F-862C-4963-B0CC-D775ECC84EBF</title>
+    <defs>
+        <polygon id="path-1" points="9.3 0.3 7.9 1.7 12.2 6 0 6 0 8 12.2 8 7.9 12.3 9.3 13.7 16 7"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="00-Landing-Non-Logged-In" transform="translate(-311.000000, -442.000000)">
+            <g id="Group-2" transform="translate(69.000000, 436.000000)">
+                <g id="UI-Kit/Button/Link" transform="translate(170.000000, 4.000000)">
+                    <g id="UI-Kit/Icons/arrow/right" transform="translate(72.000000, 2.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="icon-color" fill="#137D60" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
