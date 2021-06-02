@@ -58,7 +58,7 @@
         .Footer-Column {
           margin: 0px 0px;
           a:hover {
-            color: #D4D4D4;
+
           }
           &.col-span-2 {
             ul {
@@ -99,7 +99,7 @@
           font-size: 14px;
           line-height: 21px;
           &:hover {
-            color: $global-grey-bg-dark;
+            color: $global-grey-bg;
           }
         }
       }
@@ -117,7 +117,7 @@
             color: $global-grey-bg !important;
             text-decoration: none;
             &:hover {
-
+              color: $global-grey-bg
             }
           }
         }
@@ -148,7 +148,7 @@
               color: $global-color_grey_dark;
               text-decoration: none;
               &:hover{
-                color:white;
+                color: $global-color_grey_dark;
               }
             }
             @media (max-width: 767px) {
