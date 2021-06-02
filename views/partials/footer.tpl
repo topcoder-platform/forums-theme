@@ -122,6 +122,27 @@
           </ul>
         </div>
       </div>
+      <div class="block Footer-Mobile-Menu-Container">
+          <div class="Footer-Menu-Title">
+              <a href="https://www.topcoder.com/challenges">COMPETE</a>
+              <a href="https://www.topcoder.com/thrive">TRACKS</a>
+          </div>
+          <div class="Footer-Menu-Title">
+              <a href="https://www.topcoder.com/community/learn">COMMUNITY</a>
+              <a href="https://www.topcoder.com/thrive/tracks?track=Topcoder&amp;tax=Help%20Articles">HELP CENTER</a>
+          </div>
+          <div class="Footer-Menu-Title"><a href="https://www.topcoder.com/ommunity/admins">ABOUT</a>
+          </div>
+      </div>
+      <div class="block Footer-Mobile-Share-Container">
+        <a href="https://www.facebook.com/topcoder/" target="_blank" rel="noopener noreferrer">
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10S2 17.514 2 12 6.486 2 12 2zm0-2C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-2 10H8v2h2v6h3v-6h1.82l.18-2h-2v-.833c0-.478.096-.667.558-.667H15V6h-2.404C10.798 6 10 6.792 10 8.308V10z" fill="#AAA" fill-rule="evenodd"></path></svg></a>
+        <a href="https://www.youtube.com/c/TopcoderOfficial" target="_blank" rel="noopener noreferrer"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16.23 7.102c-2.002-.136-6.462-.135-8.461 0C5.604 7.25 5.35 8.558 5.333 12c.017 3.436.27 4.75 2.437 4.898 1.999.135 6.459.136 8.461 0 2.165-.148 2.42-1.457 2.437-4.898-.018-3.436-.271-4.75-2.438-4.898zM10 14.222V9.778l4.778 2.218L10 14.222zM12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10S2 17.514 2 12 6.486 2 12 2zm0-2C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0z" fill="#AAA" fill-rule="evenodd"></path></svg></a>
+        <a href="https://www.linkedin.com/company/topcoder" target="_blank" rel="noopener noreferrer"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10S2 17.514 2 12 6.486 2 12 2zm0-2C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-2 8c0 .557-.447 1.008-1 1.008-.553 0-1-.45-1-1.008 0-.557.447-1.008 1-1.008.553 0 1 .452 1 1.008zm0 2H8v6h2v-6zm3 0h-2v6h2v-2.861c0-1.722 2.002-1.881 2.002 0V16H17v-3.359c0-3.284-3.128-3.164-4-1.548V10z" fill="#AAA" fill-rule="evenodd"></path></svg></a>
+        <a href="https://twitter.com/topcoder" target="_blank" rel="noopener noreferrer"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10S2 17.514 2 12 6.486 2 12 2zm0-2C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm6.5 8.778a4.928 4.928 0 0 1-1.414.388 2.473 2.473 0 0 0 1.083-1.362 4.926 4.926 0 0 1-1.564.597 2.464 2.464 0 0 0-4.195 2.245 6.993 6.993 0 0 1-5.074-2.572 2.465 2.465 0 0 0 .762 3.287 2.457 2.457 0 0 1-1.114-.308c-.027 1.14.791 2.207 1.975 2.445a2.467 2.467 0 0 1-1.112.042 2.465 2.465 0 0 0 2.3 1.709A4.955 4.955 0 0 1 6.5 16.27a6.963 6.963 0 0 0 3.773 1.106c4.572 0 7.154-3.861 6.998-7.324.482-.346.899-.78 1.229-1.274z" fill="#AAA" fill-rule="evenodd"></path></svg></a>
+        <a href="https://www.instagram.com/topcoder" target="_blank" rel="noopener noreferrer"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10S2 17.514 2 12 6.486 2 12 2zm0-2C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 7.082c1.602 0 1.792.006 2.425.035 1.627.074 2.385.845 2.46 2.459.028.633.034.822.034 2.424 0 1.602-.006 1.792-.034 2.424-.075 1.613-.832 2.386-2.46 2.46-.633.028-.822.035-2.425.035-1.602 0-1.792-.006-2.424-.035-1.63-.075-2.385-.849-2.46-2.46-.028-.632-.035-.822-.035-2.424 0-1.602.007-1.792.035-2.424.074-1.615.832-2.386 2.46-2.46.632-.029.822-.034 2.424-.034zM12 6c-1.63 0-1.833.007-2.474.037-2.18.1-3.39 1.309-3.49 3.489C6.007 10.167 6 10.371 6 12c0 1.63.007 1.834.036 2.474.1 2.179 1.31 3.39 3.49 3.49.641.029.844.036 2.474.036 1.63 0 1.834-.007 2.475-.036 2.176-.1 3.391-1.309 3.489-3.49.029-.64.036-.844.036-2.474 0-1.629-.007-1.833-.036-2.474-.098-2.177-1.309-3.39-3.489-3.489C13.834 6.007 13.63 6 12 6zm0 2.919a3.081 3.081 0 1 0 0 6.162 3.081 3.081 0 0 0 0-6.162zM12 14a2 2 0 1 1 0-4 2 2 0 1 1 0 4zm3.202-5.922a.72.72 0 1 0 0 1.44.72.72 0 0 0 0-1.44z" fill="#AAA" fill-rule="evenodd"></path></svg></a>
+      </div>
       <div class="block Footer-Copyright-Container flex ">
         <ul class="Footer-Copyright flex-grow">
           <li>{t c="©"} {$smarty.now|date_format:"%Y"} {t c="Topcoder"}</li>
