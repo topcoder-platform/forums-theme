@@ -103,7 +103,7 @@
   {if $User.SignedIn}
   <div class="Header-Second-Menu Community-Menu hide hide-mobile">
     <div class="Second-Menu-Content">
-      <a class="Second-Menu-Link" href="https://www.topcoder.com/my-dashboard"><span>Dashboard</span></a>
+      <a class="Second-Menu-Link" href="https://www.topcoder.com/home"><span>Dashboard</span></a>
       <a class="Second-Menu-Link" href="https://www.topcoder.com/members/{$User.Name|escape:'html'}"><span>My Profile</span></a>
       <a class="Second-Menu-Link" href="https://community.topcoder.com/PactsMemberServlet?module=PaymentHistory&full_list=false" target="_blank"><span>Payments</span></a>
     </div>
