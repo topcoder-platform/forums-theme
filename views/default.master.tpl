@@ -83,7 +83,7 @@
                     {$smarty.capture.menu}
                 </header>
             {else}
-                {include file="partials/header.tpl"}
+                <!-- { include file="partials/header.tpl"} -->
             {/if}
             <div class="Frame-body">
                 <div class="Frame-content">
@@ -151,9 +151,9 @@
                 </div>
             </div>
         </div>
-        <div class="Frame-footer">
+        <!--div class="Frame-footer">
             {include file="partials/footer.tpl"}
-        </div>
+        </div-->
     </div>
     <div id="modals"></div>
     {event name="AfterBody"}
