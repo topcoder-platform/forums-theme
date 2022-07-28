@@ -28,6 +28,7 @@
             <a class="Header-secondary-item primary-item-compete">Compete</a>
             <a class="Header-secondary-item primary-item-tracks">Tracks</a>
             <a class="Header-secondary-item selected primary-item-explore">Explore</a>
+            <a class="Header-secondary-item primary-item-discord" href="https://discord.gg/topcoder" target="_blank">Discord</a>
             <div class="Header-Primary-more-content-container">
               <a class="Header-secondary-item primary-item-more"><span>More</span> <img src="/themes/topcoder/design/images/icon-down-white.svg" /></a>
               <div class="Header-Primary-more-content">
@@ -126,7 +127,8 @@
     <div class="Header-Primary-Sub-Mobile ">
       <a class="primary-item-compete">Compete</a>
       <a class="primary-item-tracks">Tracks</a>
-      <a class="primary-item-explore selected">Explore</a></div>
+      <a class="primary-item-explore selected">Explore</a>
+      <a class="primary-item-discord" href="https://discord.gg/topcoder" target="_blank">Discord</a>
   </div>
 
   <div class="Header-Second-Menu-mobile Explore-Menu hide-desktop">
