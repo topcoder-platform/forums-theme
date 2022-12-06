@@ -31,7 +31,7 @@
 
     tcUniNav('init', 'headerNav', {
         type: 'tool',
-        toolName: 'Topcoder Forums',
+        toolName: 'Discussion',
         user,
         signIn() {
             window.location.href = '/entry/signin?Source=forum';
