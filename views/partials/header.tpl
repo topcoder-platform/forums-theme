@@ -28,6 +28,7 @@
     tcUniNav('init', 'headerNav', {
         type: 'tool',
         toolName: 'Forums',
+        toolRoot: '/',
         user,
         signIn() {
             window.location.replace(signInUrl);
