@@ -10,25 +10,11 @@
     o=t.getElementsByTagName(e)[0];i.async=1;i.type="module";i.src=a;o.parentNode.insertBefore(i,o)
     }(window,document,"script","{/literal}{$UniversalNavUrl}{literal}","tcUniNav");
     {/literal}
-    {if $User.SignedIn}
-    const handle = '{$User.Name|escape:'html'}';
-    const initials = handle ? handle.substr(0, 2).toUpperCase() : '';
-    const userId = {$User.TopcoderUserID};
-    const photoURL = '{$User.TopcoderPhotoUrl}';
-    const user = {
-        photoURL: photoURL,
-        userId: userId,
-        initials: initials,
-        handle: handle,
-    };
-    {else}
-    const user = null;
-    {/if}
     {literal}
     tcUniNav('init', 'headerNav', {
         type: 'tool',
         toolName: 'Forums',
-        user,
+        user: 'auto',
         signIn() {
             window.location.replace(signInUrl);
         },
