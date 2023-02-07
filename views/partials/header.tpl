@@ -15,6 +15,7 @@
         type: 'tool',
         toolName: 'Forums',
         user: 'auto',
+        toolRoot: '/',
         signIn() {
             window.location.replace(signInUrl);
         },
